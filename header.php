@@ -1,6 +1,6 @@
 <?php
 
 echo "hej";
-echo "vgd?";
+echo "vg?";
 
 ?>
