@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8">
     <link href="css/style.css" rel="stylesheet" type="text/css">
-    <link rel=“stylesheet” href = “<?php bloginfo(‘stylesheet_url’)?>
+    <link rel=“stylesheet” href="<?php echo bloginfo('stylesheet_url');?>">
     <?php wp_head();?>
     <title></title>
   </head>
