@@ -11,3 +11,7 @@
     <div id="header_wrapper">
     <nav class="header_menu"><?php wp_nav_menu('header_menu');?></nav>
     </div>
+    <div class="404">
+      <h1>Sidan kan inte hittas!</h1>
+      <p href="">Till Startsidan</p>
+    </div>

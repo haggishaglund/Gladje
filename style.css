@@ -29,6 +29,7 @@ GRN #1B9937
 WHT #FFFEF8
 BLK #0A1010
 */
+
 /*----HEADINGS AND TEXTS----*/
 h1{
   font-size: 87px;
@@ -56,6 +57,9 @@ h6{
 }
 body{
   font-size: 18px;
+}
+p{
+  
 }
 
 /*----404----*/
