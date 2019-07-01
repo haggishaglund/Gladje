@@ -11,7 +11,7 @@
   padding: 0;
 }
 
-/*----COLORS----
+/*----COLORS GLÄDJE----
 PRP #240226
 YLW #FFFA0D
 ORA #FF9000
@@ -21,6 +21,14 @@ WHT #FFFFFF
 BLK #0A1010
 */
 
+/*----COLORS PABLO----
+RED #FC3F1D
+YLW #F7D100
+ORA #FF9000
+GRN #1B9937
+WHT #FFFEF8
+BLK #0A1010
+*/
 /*----HEADINGS AND TEXTS----*/
 h1{
   font-size: 87px;
