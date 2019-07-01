@@ -4,6 +4,7 @@
   <head>
     <meta charset="utf-8">
     <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i,900,900i&display=swap" rel="stylesheet">
     <link rel=“stylesheet” href="<?php echo bloginfo('stylesheet_url');?>">
     <?php wp_head();?>
     <title></title>
