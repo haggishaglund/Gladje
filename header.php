@@ -9,6 +9,15 @@
     <?php wp_head();?>
     <title></title>
   </head>
+
+<?php
+//I think we need this
+        if( have_posts() ){
+            while( have_posts() ){
+      the_post();
+    }
+  }
+?>
   <body>
     <div id="header_wrapper">
     <nav class="header_menu"> <?php wp_nav_menu('header_menu');?></nav>
