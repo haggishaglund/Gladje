@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -10,5 +9,5 @@
   </head>
   <body>
     <div id="header_wrapper">
-    <nav class="header_menu"> <?php wp_nav_menu('header_menu');?></nav>
+    <nav class="header_menu"><?php wp_nav_menu('header_menu');?></nav>
     </div>
