@@ -5,10 +5,14 @@
 */
 
 /*----GLOBAL----*/
-*{
-  font-family: 'Lato', sans-serif;
-  margin: 0;
-  padding: 0;
+* {
+	font-family: 'Lato', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-size: 1em;
 }
 
 /*----COLORS GLÄDJE----
@@ -31,35 +35,38 @@ BLK #0A1010
 */
 
 /*----HEADINGS AND TEXTS----*/
-h1{
-  font-size: 87px;
-  font-weight: 900;
+h1 {
+	font-size: 5.44em;
+	font-weight: 900;
 }
-h2{
-  font-size: 65px;
-  font-weight: 900;
+
+h2 {
+	font-size: 4.06em;
+	font-weight: 900;
 }
-h3{
-  font-size: 49px;
-  font-weight: 900;
+
+h3 {
+	font-size: 3.06em;
+	font-weight: 900;
 }
-h4{
-  font-size: 37px;
-  font-weight: 900;
+
+h4 {
+	font-size: 2.31em;
+	font-weight: 900;
 }
-h5{
-  font-size: 28px;
-  font-weight: 900;
+
+h5 {
+	font-size: 1.75em;
+	font-weight: 900;
 }
-h6{
-  font-size: 21px;
-  font-weight: 900;
+
+h6 {
+	font-size: 1.31em;
+	font-weight: 900;
 }
-body{
-  font-size: 18px;
-}
-p{
-  
+
+p {
+	font-size: 1em;
 }
 
 /*----404----*/
