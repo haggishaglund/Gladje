@@ -9,28 +9,28 @@
           'has_archive' => true,
 
           //Not sure if this is how you do it
-          'taxonomies' => array('all','vegan','vegetarian','fish','beef','chicken','pork','dessert','lunch','ala-carte'),
+          'taxonomies' => array('allt','veganskt','vegetariskt','fisk','nötkött','kyckling','fläsk','efterrätt','lunch','ala-carte'),
 
             'labels' => array(
-            'name'               => __( 'Food',                       'food-textdomain' ),
-            'singular_name'      => __( 'Food',                       'food-textdomain' ),
-            'menu_name'          => __( 'Food',                       'food-textdomain' ),
-            'name_admin_bar'     => __( 'Add food item',              'food-textdomain' ),
-            'add_new'            => __( 'Add New',                    'food-textdomain' ),
-            'add_new_item'       => __( 'Add New food item',          'food-textdomain' ),
-            'edit_item'          => __( 'Edit food item',             'food-textdomain' ),
-            'new_item'           => __( 'New food item',              'food-textdomain' ),
-            'view_item'          => __( 'View food item',             'food-textdomain' ),
-            'search_items'       => __( 'Search food item',           'food-textdomain' ),
-            'not_found'          => __( 'No food found',              'food-textdomain' ),
-            'not_found_in_trash' => __( 'No foods found in trash',    'food-textdomain' ),
-            'all_items'          => __( 'All food items',             'food-textdomain' ),
+            'name'               => __( 'Mat',                        'mat-textdomain' ),
+            'singular_name'      => __( 'Mat',                        'mat-textdomain' ),
+            'menu_name'          => __( 'Mat',                        'mat-textdomain' ),
+            'name_admin_bar'     => __( 'Lägg till ny maträtt',       'mat-textdomain' ),
+            'add_new'            => __( 'Lägg till',                  'mat-textdomain' ),
+            'add_new_item'       => __( 'Lägg till ny maträtt',       'mat-textdomain' ),
+            'edit_item'          => __( 'Ändra maträtt',              'mat-textdomain' ),
+            'new_item'           => __( 'Ny maträtt',                 'mat-textdomain' ),
+            'view_item'          => __( 'Visa maträtt',               'mat-textdomain' ),
+            'search_items'       => __( 'Sök maträtt',                'mat-textdomain' ),
+            'not_found'          => __( 'Ingen maträtt hittad',       'mat-textdomain' ),
+            'not_found_in_trash' => __( 'Ingen maträtt i papperskorgen','mat-textdomain' ),
+            'all_items'          => __( 'Visa ALLA maträtter',        'mat-textdomain' ),
         ),
 
   );
-  register_post_type('food',$args);
+  register_post_type('mat',$args);
 }
-  add_action('init','food_post_type');
+  add_action('init','mat_post_type');
 
 //incase we want this
 /*  function register_my_menus() {

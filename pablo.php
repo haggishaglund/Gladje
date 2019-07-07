@@ -29,7 +29,7 @@ if( have_posts() ){
 }
 
     $args = array(
-    'post_type' => 'food',
+    'post_type' => 'mat',
     'post_status' => 'publish',
     'posts_per_page' => 6,
     );
