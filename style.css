@@ -6,6 +6,7 @@
 
 /*----GLOBAL----*/
 * {
+	box-sizing: border-box; /* includes padding and border in percentage width & height */
 	font-family: 'Lato', sans-serif;
 	margin: 0;
 	padding: 0;
