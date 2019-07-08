@@ -9,7 +9,6 @@
 /*----GLOBAL----*/
 * {
 	box-sizing: border-box; /* includes padding and border in percentage width & height */
-	color: #0A1010;
 	font-family: 'Lato', sans-serif;
 	margin: 0;
 	padding: 0;
@@ -17,63 +16,69 @@
 
 body {
 	background: #240226;
+	color: #0A1010;
 	font-size: 1em;
 }
 
 main {}
 
 /*----COLORS GLÄDJE----
-PRP #240226
-YLW #FFFA0D
-ORA #FF9000
-PNK #F010B3
-CYN #14E7D6
-WHT #FFFFFF
-BLK #0A1010
+PURLE		#240226
+YELLOW	#FFFA0D
+ORANGE	#FF9000
+PINK		#F010B3
+BLUE		#14E7D6
+WHITE		#FFFFFF
+BLACK		#0A1010
 */
 
 /*----COLORS PABLO----
-RED #FC3F1D
-YLW #F7D100
-ORA #FF9000
-GRN #1B9937
-WHT #FFFEF8
-BLK #0A1010
+RED			#FC3F1D
+YELLOW	#F7D100
+ORANGE	#FF9000
+GREEN		#1B9937
+WHITE		#FFFEF8
+BLACK		#0A1010
 */
 
 /*----HEADINGS AND TEXTS----*/
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 900;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+
 h1 {
 	font-size: 5.44em;
-	font-weight: 900;
 }
 
 h2 {
 	font-size: 4.06em;
-	font-weight: 900;
 }
 
 h3 {
 	font-size: 3.06em;
-	font-weight: 900;
 }
 
 h4 {
 	font-size: 2.31em;
-	font-weight: 900;
 }
 
 h5 {
 	font-size: 1.75em;
-	font-weight: 900;
 }
 
 h6 {
 	font-size: 1.31em;
-	font-weight: 900;
 }
 
 p {
 	font-size: 1em;
+}
+
+small {
+	font-size: 0.75em;
 }
 
 /*----404----*/
@@ -109,17 +114,15 @@ p {
 }
 
 .section h5 {
-	letter-spacing: 1px;
 	padding: 40px 40px 0;
 	text-align: center;
-	text-transform: uppercase;
 }
 
 .section p {
 	padding: 20px 40px 0px;
 }
 
-.section p:last-of-type { /* last paragraph adds padding to the white section box */
+.section p:last-of-type { /* last paragraph adds more padding to the white section box */
 	padding: 20px 40px 40px;
 }
 
@@ -150,6 +153,47 @@ p {
 /*----PABLO----*/
 
 /*----FOOTER----*/
+
+footer {
+	background: rgba(20,231,214, 0.5); /* color #14E7D6, but adds opacity to the background ONLY (not the content) */
+	color: #fff;
+	padding: 0 40px 40px;
+}
+
+.footer_section { /* we need these for the grid in the footer */
+}
+
+footer h6 {
+	padding: 30px 0 10px;
+}
+
+footer ul {
+	list-style-position: inside;
+	list-style-type: none;
+}
+
+footer li:before {
+	content: "—";
+	padding: 0 10px 0 0;
+}
+
+footer a {
+	color: #fff;
+	text-decoration: none;
+}
+
+footer p {
+	padding: 0 0 20px;
+}
+
+footer p:last-of-type { /* last paragraph does not have padding under */
+	padding: 0;
+}
+
+
+
+
+
 
 
 
