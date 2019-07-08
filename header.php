@@ -13,15 +13,12 @@
 <body>
 
 <nav id="top_nav">
+
+	<a href="<?php bloginfo('url'); ?>">
+		<?php $custom_logo_id = get_theme_mod( 'custom_logo' ); ?>
+		<?php $image = wp_get_attachment_image_src( $custom_logo_id , 'full' ); ?>
+		<div id="logo"><img src="<?php echo $image[0]; ?>" alt=""></div>
+	</a>
+	
 	<?php wp_nav_menu('header_menu');?>
 </div>
-
-<?php
-// I think we need this
-// We do, but not in the header
-	if( have_posts() ){
-		while( have_posts() ){
-			the_post();
-		} // end WHILE have_posts
-	} // end IF have_posts
-?>
