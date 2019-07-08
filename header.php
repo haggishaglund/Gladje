@@ -10,15 +10,19 @@
     <title></title>
   </head>
 
+<body>
+
+<nav id="top_nav">
+  <?php wp_nav_menu('header_menu');?>
+</div>
+
 <?php
-//I think we need this
+// I think we need this
+// We do, but not in the header
         if( have_posts() ){
             while( have_posts() ){
       the_post();
     }
   }
 ?>
-  <body>
-    <div id="header_wrapper">
-    <nav class="header_menu"> <?php wp_nav_menu('header_menu');?></nav>
-    </div>
+
