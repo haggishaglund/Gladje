@@ -9,12 +9,14 @@
 /*----GLOBAL----*/
 * {
 	box-sizing: border-box; /* includes padding and border in percentage width & height */
+	color: #0A1010;
 	font-family: 'Lato', sans-serif;
 	margin: 0;
 	padding: 0;
 }
 
 body {
+	background: #240226;
 	font-size: 1em;
 }
 
@@ -76,7 +78,11 @@ p {
 
 /*----HEADER NAVIGATION----*/
 
-#top_nav {}
+#top_nav {
+	background: #fff;
+	height: 80px;
+	width: 100%;
+}
 
 /*----HEADER IMAGE----*/
 
