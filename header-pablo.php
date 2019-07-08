@@ -20,5 +20,5 @@
 		<div id="logo"><img src="<?php echo $image[0]; ?>" alt=""></div>
 	</a>
 
-	<?php wp_nav_menu('header_menu');?>
+	<?php wp_nav_menu('pablo_menu');?>
 </nav>
