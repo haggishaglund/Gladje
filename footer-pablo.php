@@ -19,8 +19,8 @@
 
 	<div class="footer_section">
 		<h6>Öppettider</h6>
-		<p>Ons - lör &ndash; 17 - 00</p>
-    <p>Sön - tis &ndash; Stängt</p>
+    <p>Ons &ndash; lör  17 &ndash; 00</p>
+    <p>Sön &ndash; tis  Stängt</p>
 
 
 </footer>

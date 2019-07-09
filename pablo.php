@@ -17,8 +17,8 @@ else {
 
   <div class="pablo_section">
     <h5>ÖPPETTIDER</h5>
-    <p>Ons - lör &ndash; 17 - 00</p>
-    <p>Sön - tis &ndash; Stängt</p>
+    <p>Ons &ndash; lör  17 &ndash; 00</p>
+    <p>Sön &ndash; tis  Stängt</p>
   </div>
 
   <div class="pablo_section">
