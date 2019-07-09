@@ -5,41 +5,10 @@
 
 <main>
 
-
-
 <div class="section">
 	<h5><?php the_field('box1_title'); ?></h5>
-	<center>
-
-	<p>
-		<strong><?php the_field('box1_open1_title'); ?></strong><br/>
-		<?php if(get_field('box1_open1_days1')) { the_field('box1_open1_days1'); ?> &emsp; <?php the_field('box1_open1_days1_open'); ?> &ndash; <?php the_field('box1_open1_days1_close'); ?><br/><?php } ?>
-		<?php if(get_field('box1_open1_days2')) { the_field('box1_open1_days2'); ?> &emsp; <?php the_field('box1_open1_days2_open'); ?> &ndash; <?php the_field('box1_open1_days2_close'); ?><br/><?php } ?>
-		<?php if(get_field('box1_open1_days3')) { the_field('box1_open1_days3'); ?> &emsp; <?php the_field('box1_open1_days3_open'); ?> &ndash; <?php the_field('box1_open1_days3_close'); } ?>
-	</p>
-
-		<p><strong><?php the_field('box1_open2_title'); ?></strong><br/>
-			<?php if(get_field('box1_open2_days1')) { the_field('box1_open2_days1'); ?> &emsp; <?php the_field('box1_open3_days1_open'); ?> &ndash; <?php the_field('box1_open2_days1_close'); ?><br/><?php } ?>
-			<?php if(get_field('box1_open2_days2')) { the_field('box1_open2_days2'); ?> &emsp; <?php the_field('box1_open3_days2_open'); ?> &ndash; <?php the_field('box1_open2_days2_close'); ?><br/><?php } ?>
-			<?php if(get_field('box1_open2_days3')) { the_field('box1_open2_days3'); ?> &emsp; <?php the_field('box1_open3_days3_open'); ?> &ndash; <?php the_field('box1_open2_days3_close'); } ?>
-		</p>
-
-		<p><strong><?php the_field('box1_open3_title'); ?></strong><br/>
-			<?php if(get_field('box1_open3_days1')) { the_field('box1_open3_days1'); ?> &emsp; <?php the_field('box1_open3_days1_open'); ?> &ndash; <?php the_field('box1_open3_days1_close'); ?><br/><?php } ?>
-			<?php if(get_field('box1_open3_days2')) { the_field('box1_open3_days2'); ?> &emsp; <?php the_field('box1_open3_days2_open'); ?> &ndash; <?php the_field('box1_open3_days2_close'); ?><br/><?php } ?>
-			<?php if(get_field('box1_open3_days3')) { the_field('box1_open3_days3'); ?> &emsp; <?php the_field('box1_open3_days3_open'); ?> &ndash; <?php the_field('box1_open3_days3_close'); } ?>
-		</p>
-
-		<p><strong><?php the_field('box1_open4_title'); ?></strong><br/>
-			<?php if(get_field('box1_open4_days1')) {the_field('box1_open4_days1'); ?> &emsp; <?php the_field('box1_open4_days1_open'); ?> &ndash; <?php the_field('box1_open4_days1_close'); ?><br/><?php } ?>
-			<?php if(get_field('box1_open4_days2')) {the_field('box1_open4_days2'); ?> &emsp; <?php the_field('box1_open4_days2_open'); ?> &ndash; <?php the_field('box1_open4_days2_close'); ?><br/><?php } ?>
-			<?php if(get_field('box1_open4_days3')) {the_field('box1_open4_days3'); ?> &emsp; <?php the_field('box1_open4_days3_open'); ?> &ndash; <?php the_field('box1_open4_days3_close'); } ?>
-		</p>
-
-	</center>
+	<center><?php get_template_part('openinghours'); ?></center>
 </div>
-
-
 
 <div class="section">
 	<img src="https://uc7975af365f723749d561e033e9.previews.dropboxusercontent.com/p/thumb/AAdO02tTaJU8AXsqZ9nXMd5fc1MbXELMZl4kd4oiomkHFiq9vg2pJg45VP5fMr7JQyFJFvNyXzxAkFC_7JP28r_M2sbeI1WHoLgHM7_AQnXOAyYTMyhDFLws4tPklRwes_S97BHPX_tjuPwlFSTckG_28KzfrrGWao5FgmcLwMCTVAAoYHYzfKXVQGewFMIWfbHIhM7E0c8pSaVkk4zbwqWJ2yY8bpDJ6eITUZyquMW1Gw_TITEdxhfSUyxZHdASQ1qBTrjIWOmw0EZEkT3rTruh6lXuOXGpaD9WwezWgRpOnnR1N-mJT0x4IGbWbCyEnOMOmJ2dopVhcptG3eSCWSJIEChWuVBrsjmnxIznrsMXeQ/p.jpeg?fv_content=true&size_mode=5">
