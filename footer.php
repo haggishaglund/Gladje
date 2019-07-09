@@ -27,21 +27,7 @@
 
 	<div class="footer_section">
 		<h6>Öppettider</h6>
-		<p><strong>À la carte</strong><br/>
-		Mån&ndash;tor &emsp; 17 &ndash; 22<br/>
-		Fre &emsp; 20 &ndash; 22<br/>
-		Lör &emsp; 17 &ndash; 22</p>
-
-		<p><strong>Fredagslunch</strong><br/>
-		11:30 &ndash; 15:00</p>
-
-		<p><strong>Nattklubb</strong><br/>
-		Fre&ndash;Lör &emsp; 22 &ndash; 02</p>
-
-		<p><strong>After work</strong><br/>
-		Fre &emsp; 17 &ndash; 20</p>
-		</p>
-
+		<?php get_template_part('openinghours'); ?>
 	</div>
 
 </footer>
