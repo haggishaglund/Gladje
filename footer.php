@@ -36,7 +36,7 @@
 		11:30 &ndash; 15:00</p>
 
 		<p><strong>Nattklubb</strong><br/>
-		Fre&ndash;Lör 22 &ndash; 02</p>
+		Fre&ndash;Lör &emsp; 22 &ndash; 02</p>
 
 		<p><strong>After work</strong><br/>
 		Fre &emsp; 17 &ndash; 20</p>
