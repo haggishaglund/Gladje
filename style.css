@@ -161,7 +161,7 @@ small {
 
 #pablo_title1{
 	text-align: center;
-	color:#FF9000;
+	color:#FC3F1D;
 }
 
 #pablo_title2{
@@ -177,20 +177,19 @@ footer {
 	padding: 0 40px 40px;
 }
 
-.footer_section { /* we need these for the grid in the footer */
+.pablo_footer_section { /* we need these for the grid in the footer */
+	text-align: center;
 }
 
 footer h6 {
 	padding: 30px 0 10px;
 }
 
-footer ul {
-	list-style-position: inside;
+.pablo_footer_section ul {
 	list-style-type: none;
 }
 
-footer li:before {
-	content: "—";
+.pablo_footer_section li:before {
 	padding: 0 10px 0 0;
 }
 

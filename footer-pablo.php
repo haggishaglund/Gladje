@@ -2,7 +2,7 @@
 
 <footer>
 
-	<div class="footer_section">
+	<div class="pablo_footer_section">
 		<h6>Kontakt</h6>
 		<ul>
 			<li><a href="tel:036712160">036 – 71 21 60</a></li>
@@ -10,14 +10,14 @@
 		</ul>
 	</div>
 
-	<div class="footer_section">
+	<div class="pablo_footer_section">
 		<h6>Hitta hit</h6>
 			<p><strong>Glädje Restaurang & Bar</strong><br/>
         Trädgårdsgatan 5<br/>
         55316 JÖNKÖPING</p>
 	</div>
 
-	<div class="footer_section">
+	<div class="pablo_footer_section">
 		<h6>Öppettider</h6>
     <ul>
     <li>Ons &ndash; lör  17 &ndash; 00</li>
