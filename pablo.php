@@ -68,7 +68,7 @@ if( have_posts() ){
 }
 
     $args = array(
-    'post_type' => 'mat',
+    'post_type' => 'mat', //This will probably have to change, we don't want food on here
     'post_status' => 'publish',
     'posts_per_page' => 6,
     );
@@ -80,7 +80,6 @@ if( have_posts() ){
     $query->the_post();
     echo"<div class='grid_wrapper'>";
     echo"<div class='grid_image'>";
-    //echo'<a class="archive_link" href="' . get_the_permalink() .'">';the_post_thumbnail('grid_thumbnail');echo"<div class='front_image_title'>"; the_title(); echo"</div>";'</a>';
     echo"</div>";
     echo"</div>";
     //the_content();

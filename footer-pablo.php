@@ -6,7 +6,7 @@
 		<h6>Kontakt</h6>
 		<ul>
 			<li><a href="tel:036712160">036 – 71 21 60</a></li>
-			<li><a href="mailto:info@gladjejonkoping.se" target="_top">info@gladjejonkoping.se</a></li>
+			<li><a href="mail:info@gladjejonkoping.se" target="_top">info@gladjejonkoping.se</a></li>
 		</ul>
 	</div>
 
@@ -19,8 +19,10 @@
 
 	<div class="footer_section">
 		<h6>Öppettider</h6>
-    <p>Ons &ndash; lör  17 &ndash; 00</p>
-    <p>Sön &ndash; tis  Stängt</p>
+    <ul>
+    <li>Ons &ndash; lör  17 &ndash; 00</li>
+    <li>Sön &ndash; tis  Stängt</li>
+  </ul>
 
 
 </footer>
