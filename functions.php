@@ -43,14 +43,13 @@
 	}*/
 
 
-
 //Website Support
 add_theme_support('post-thumbnails');
 add_theme_support('post-formats');
 
 //add_action( 'init', 'register_my_menus' );
 add_image_size('hero_image',1,1,true);
-add_image_size('grid_image',1,1,true);
+add_image_size('grid_image',300,300,true);
 add_image_size('logo_image', 1,1,true );
 
 

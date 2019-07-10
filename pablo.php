@@ -3,7 +3,7 @@
   Template Name: pablo
 */
 
-if(is_page(10)) { //This number will be changed later so that it suits pablo's page
+if(is_page(7-2)) { //This number will be changed later so that it suits pablo's page
  get_header('pablo');
 }
 else {
@@ -13,10 +13,10 @@ else {
 ?>
 
 
-<main>
+<main class="pablo_main">
 
   <div class="pablo_section">
-    <h5>ÖPPETTIDER</h5>
+    <h5 id="pablo_title1">ÖPPETTIDER</h5>
     <p>Ons &ndash; lör  17 &ndash; 00</p>
     <p>Sön &ndash; tis  Stängt</p>
   </div>
@@ -26,7 +26,7 @@ else {
   </div>
 
   <div class="pablo_section">
-    <h5>OM PABLO</h5>
+    <h5 id="pablo_title2">OM PABLO</h5>
     <p>Hola compadre!
         Det här är ingen vanlig tacorestaurang..
         Här hittar du den genuina mexikanska matlagningen!
@@ -90,7 +90,7 @@ if( have_posts() ){
     wp_reset_postdata();
     echo"</div>";
     echo"<div class='pablo_footer'>";
-    if(is_page(10)) { //This number will be changed later so that it suits pablo's page
+    if(is_page(7-2)) { //This number will be changed later so that it suits pablo's page
      get_footer('pablo');
     }
     else {

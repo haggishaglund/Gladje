@@ -152,6 +152,62 @@ small {
 
 /*----PABLO----*/
 
+.pablo_section{
+}
+
+.pablo_main{
+	background-color:#FFFEF8;
+}
+
+#pablo_title1{
+	text-align: center;
+	color:#FF9000;
+}
+
+#pablo_title2{
+	text-align: center;
+	color:#1B9937;
+}
+
+/*----PABLO FOOTER----*/
+
+footer {
+	background: rgba(255,144,0, 0.5); /* color #14E7D6, but adds opacity to the background ONLY (not the content) */
+	color: #fff;
+	padding: 0 40px 40px;
+}
+
+.footer_section { /* we need these for the grid in the footer */
+}
+
+footer h6 {
+	padding: 30px 0 10px;
+}
+
+footer ul {
+	list-style-position: inside;
+	list-style-type: none;
+}
+
+footer li:before {
+	content: "—";
+	padding: 0 10px 0 0;
+}
+
+footer a {
+	color: #fff;
+	text-decoration: none;
+}
+
+footer p {
+	padding: 0 0 20px;
+}
+
+footer p:last-of-type { /* last paragraph does not have padding under */
+	padding: 0;
+}
+
+
 /*----FOOTER----*/
 
 footer {
@@ -189,15 +245,6 @@ footer p {
 footer p:last-of-type { /* last paragraph does not have padding under */
 	padding: 0;
 }
-
-
-
-
-
-
-
-
-
 
 /* -------------- DESKTOP VERSION -------------- */
 
