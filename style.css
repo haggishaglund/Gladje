@@ -178,9 +178,31 @@ a .section_link {
 
 /*----ALC SINGLE----*/
 
-/*----LUNCH ARCHIVE----*/
+/*----LUNCH----*/
 
-/*----LUNCH SINGLE----*/
+#lunch-wrapper {
+		background: #FFF;
+		margin: 30px;
+		padding: 30px;
+}
+.matmenu-title {
+	color: #F010B3;
+	text-align: center;
+}
+#lunch-price {
+	text-align: center;
+	text-transform: none;
+}
+.lunch-item {
+	margin: 10px 0 40px;
+	text-align: center;
+}
+.lunch-item h5 {
+	margin-bottom: 10px;
+}
+.lunch-item p {
+
+}
 
 /*----AFTER WORK----*/
 

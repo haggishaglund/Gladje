@@ -12,6 +12,7 @@
     <nav class="header_menu"><?php wp_nav_menu('header_menu');?></nav>
     </div>
     <div class="404">
-      <h1>Sidan kan inte hittas!</h1>
+      <h2>Hoppsan!</h2>
+      <h3>Den här sidan finns inte...</h3>
       <p href="">Till Startsidan</p>
     </div>
