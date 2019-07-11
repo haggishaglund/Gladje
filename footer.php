@@ -1,5 +1,7 @@
 <?php wp_footer();?>
 
+<div id="footer_space"></div>
+
 <footer>
 
 	<div class="footer_section">

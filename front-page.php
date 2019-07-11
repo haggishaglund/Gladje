@@ -10,22 +10,16 @@
 	<center><?php get_template_part('openinghours'); ?></center>
 </div>
 
-<div class="section">
-	<img src="<?php the_field('box1_img'); ?>">
-</div>
+<div class="section"><img src="<?php the_field('box1_img'); ?>"></div>
 
-<div class="section">
-	<img src="<?php the_field('box2_img'); ?>">
-</div>
+<div class="section"><img src="<?php the_field('box2_img'); ?>"></div>
 
 <div class="section">
 	<h5><?php the_field('box2_title'); ?></h5>
 	<?php the_field('box2_text'); // this field creates automatic paragraphs (<p>) ?>
 </div>
 
-<div class="section">
-	<img src="<?php the_field('box2_img'); ?>">
-</div>
+<div class="section"><img src="<?php the_field('box2_img'); ?>"></div>
 
 <div class="section">
 	<h5><?php the_field('box3_title'); ?></h5>
@@ -38,9 +32,7 @@
 	<div class="space"></div>
 </div>
 
-<div class="section">
-	<img src="<?php the_field('box3_img'); ?>">
-</div>
+<div class="section"><img src="<?php the_field('box3_img'); ?>"></div>
 
 </main>
 
