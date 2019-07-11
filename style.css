@@ -88,15 +88,12 @@ small {
 #top_nav {
 	background: #FFF;
 	height: 60px;
-	padding: 20px;
+	padding: 10px;
 	width: 100%;
 }
 
-#logo {
-	height: 80px;
-}
-
 #logo img {
+	max-height: 80px;
 	max-width: 50%;
 }
 
@@ -171,8 +168,8 @@ a .section_link {
 	margin: 0 -40px;
 }
 
-.section:last-of-type {
-	display: none; /* do NOT show the last image of the grid on desktop */
+.section:nth-of-type(5) {
+	display: none; /* do NOT show the third image of the grid on desktop */
 }
 
 /*----BOKA BORD----*/
@@ -287,11 +284,43 @@ footer p:last-of-type { /* last paragraph does not have padding under */
 
 
 /* -------------- DESKTOP VERSION -------------- */
+/* REMEMBER: only CHANGES here; do not repeat the properties from the mobile version */
 
 @media (min-width: 640px) { /* 640px is just a working width, we can/might have to change this later */
 
-	.section:last-of-type {
-		display: block; /* show the last image of the grid on desktop */
+	main {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-gap: 0 0;
+		gap: 0 0;
+		grid-auto-columns: 1fr;
+		grid-auto-rows: 1fr;
+		}
+
+	.section {
+		display: inline-block;
+		position: relative;
+	}
+
+	.section img {
+		width: 100%;
+		margin: 0;
+	}
+
+	/*----HEADER NAVIGATION----*/
+
+	#top_nav {
+		height: 80px;
+		padding: 20px;
+	}
+
+	#logo img {
+		max-height: 100px;
+		max-width: 25%;
+	}
+
+	.section:nth-of-type(5) {
+		display: block; /* show the third image of the grid on desktop */
 	}
 
 }

@@ -24,6 +24,10 @@
 </div>
 
 <div class="section">
+	<img src="<?php the_field('box3_img'); ?>">
+</div>
+
+<div class="section">
 	<h5><?php the_field('box3_title'); ?></h5>
 
 	<?php if(get_field('box3_days')) { ?>
@@ -34,10 +38,6 @@
 	<div class="space"></div>
 </div>
 
-<div class="section">
-	<img src="<?php the_field('box3_img'); ?>">
-</div>
-
-<main>
+</main>
 
 <?php get_footer(); ?>
