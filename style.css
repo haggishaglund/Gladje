@@ -67,6 +67,8 @@ h4 {
 
 h5 {
 	font-size: 1.75em;
+	padding: 40px 40px 0;
+	text-align: center;
 }
 
 h6 {
@@ -108,11 +110,6 @@ small {
 
 .section:first-of-type {
 	margin: 60px 40px;
-}
-
-.section h5 {
-	padding: 40px 40px 0;
-	text-align: center;
 }
 
 .section p {
