@@ -28,7 +28,7 @@ YELLOW	#FFFA0D
 ORANGE	#FF9000
 PINK		#F010B3
 BLUE		#14E7D6
-WHITE		#FFFFFF
+WHITE		#FFF
 BLACK		#0A1010
 */
 
@@ -86,7 +86,7 @@ small {
 /*----HEADER NAVIGATION----*/
 
 #top_nav {
-	background: #fff;
+	background: #FFF;
 	height: 60px;
 	padding: 20px;
 	width: 100%;
@@ -105,7 +105,7 @@ small {
 /*----FRONT PAGE----*/
 
 .section {
-	background: #fff;
+	background: #FFF;
 	margin: 0 40px 60px;
 }
 
@@ -133,6 +133,39 @@ small {
 	padding: 5px 40px 0 !important;
 }
 
+a .section_link {
+	background: #F010B3;
+	color: #FFF;
+	display: block;
+	font-weight: 700;
+	height: 30px;
+	margin: -20px 40px 0;
+	padding: 5px 40px 0 10px;
+	text-align: center;
+	text-decoration: none;
+}
+
+.section a {
+	text-decoration: none;
+}
+
+.section_link_arrow {
+	background: #0A1010;
+	color: #FFF;
+	float: right;
+	font-size: 30px; /* fixed size because it's the arrow (triangle) */
+	height: 30px;
+	line-height: 85%;
+	margin: -5px -40px 0;
+	padding: 0px 0 0;
+	text-align: center;
+	width: 30px;
+}
+
+.space {
+	height: 40px;
+}
+
 .section img {
 	width: 100vw;
 	margin: 0 -40px;
@@ -152,28 +185,28 @@ small {
 
 /*----PABLO----*/
 
-.pablo_section{
+.pablo_section {
 }
 
-.pablo_main{
-	background-color:#FFFEF8;
+.pablo_main {
+	background: #FFFEF8;
 }
 
-#pablo_title1{
+#pablo_title1 {
+	color: #FC3F1D;
 	text-align: center;
-	color:#FC3F1D;
 }
 
-#pablo_title2{
-	text-align: center;
+#pablo_title2 {
 	color:#1B9937;
+	text-align: center;
 }
 
 /*----PABLO FOOTER----*/
 
 footer {
 	background: rgba(255,144,0, 0.5); /* color #14E7D6, but adds opacity to the background ONLY (not the content) */
-	color: #fff;
+	color: #FFF;
 	padding: 0 40px 40px;
 }
 
@@ -194,7 +227,7 @@ footer h6 {
 }
 
 footer a {
-	color: #fff;
+	color: #FFF;
 	text-decoration: none;
 }
 
@@ -211,7 +244,7 @@ footer p:last-of-type { /* last paragraph does not have padding under */
 
 footer {
 	background: rgba(20,231,214, 0.5); /* color #14E7D6, but adds opacity to the background ONLY (not the content) */
-	color: #fff;
+	color: #FFF;
 	padding: 0 40px 40px;
 }
 
@@ -233,7 +266,7 @@ footer li:before {
 }
 
 footer a {
-	color: #fff;
+	color: #FFF;
 	text-decoration: none;
 }
 
@@ -244,6 +277,10 @@ footer p {
 footer p:last-of-type { /* last paragraph does not have padding under */
 	padding: 0;
 }
+
+
+
+
 
 /* -------------- DESKTOP VERSION -------------- */
 
