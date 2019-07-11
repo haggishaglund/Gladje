@@ -11,7 +11,7 @@
 </div>
 
 <div class="section">
-	<img src="https://cdn2.cdnme.se/3450789/9-3/hjalpreda_5d271c1e9606ee11b7434838.jpg">
+	<img src="<?php the_field('box1_img'); ?>">
 </div>
 
 <div class="section">
@@ -20,7 +20,7 @@
 </div>
 
 <div class="section">
-	<img src="https://cdn3.cdnme.se/3450789/9-3/19_5d271c1b9606ee119f801483.jpg">
+	<img src="<?php the_field('box2_img'); ?>">
 </div>
 
 <div class="section">
@@ -32,6 +32,10 @@
 	<?php the_field('box3_text'); // this field creates automatic paragraphs (<p>) ?>
 	<a href="<?php the_field('box3_url'); ?>"><div class="section_link"><?php the_field('box3_link'); ?><div class="section_link_arrow">&#8227;</div></div></a>
 	<div class="space"></div>
+</div>
+
+<div class="section">
+	<img src="<?php the_field('box3_img'); ?>">
 </div>
 
 <main>
