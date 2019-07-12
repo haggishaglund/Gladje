@@ -108,7 +108,7 @@ a {
 /*----HERO IMAGE----*/
 
 header {
-	height: calc(75vh - 60px);
+	height: calc(75vh - 70px);
 	width: 100%;
 	border-bottom: 10px solid #FFF;
 }
