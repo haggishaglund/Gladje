@@ -29,7 +29,6 @@
 	<?php } // end if(get_field(box3_days) ?>
 	<?php the_field('box3_text'); // this field creates automatic paragraphs (<p>) ?>
 	<a href="<?php the_field('box3_url'); ?>"><div class="section_link"><?php the_field('box3_link'); ?><div class="section_link_arrow">&#8227;</div></div></a>
-	<div class="space"></div>
 </div>
 
 <div class="section"><img src="<?php the_field('box3_img'); ?>"></div>
