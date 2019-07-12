@@ -76,6 +76,7 @@ h6 {
 
 p {
 	font-size: 1em;
+	padding: 20px 0 0;
 }
 
 small {
@@ -112,10 +113,6 @@ small {
 	margin: 60px 40px;
 }
 
-.section p {
-	padding: 20px 0 0;
-}
-
 .sub_heading { /* for example: time for after work under the section title */
 	font-weight: 900;
 	letter-spacing: 1px;
@@ -129,7 +126,7 @@ a .section_link {
 	display: block;
 	font-weight: 700;
 	height: 30px;
-	margin: -20px 40px 0;
+	margin: 20px 0 0;
 	padding: 5px 40px 0 10px;
 	text-align: center;
 	text-decoration: none;
@@ -169,16 +166,16 @@ a .section_link {
 
 /*----LUNCH----*/
 
-#lunch-wrapper {
+#lunch-wrapper { /* this should be .section probaby */
 		background: #FFF;
 		margin: 30px;
 		padding: 30px;
 }
-.matmenu-title {
+.matmenu-title { /* this should just be h5 */
 	color: #F010B3;
 	text-align: center;
 }
-#lunch-price {
+#lunch-price { /* sub_heading probably */
 	text-align: center;
 	text-transform: none;
 }
@@ -210,7 +207,7 @@ a .section_link {
 }
 
 #pablo_title2 {
-	color:#1B9937;
+	color: #1B9937;
 	text-align: center;
 }
 
@@ -328,10 +325,18 @@ footer {flex-shrink: 0;}
 	}
 
 	.section img {
-		height: 100%;
-		margin: 0;
+		height: calc(100% + 80px); /* full width plus the removed margin which is 40px ov every side */
+		margin: -40px;
 		object-fit: cover; /* crops either the height or width, so that the image won't look stretched but still fit in its .section*/
-		width: 100%;
+		width: calc(100% + 80px); /* full width plus the removed margin which is 40px ov every side */
+	}
+
+	.section:nth-of-type(3), .section:nth-of-type(7) {
+		display: block; /* show these sections (images) on the grid on desktop */
+	}
+
+	.section:nth-of-type(5) {
+		display: none; /* DO NOT show this section (image) on the grid on desktop */
 	}
 
 	/*----HEADER NAVIGATION----*/
@@ -344,14 +349,6 @@ footer {flex-shrink: 0;}
 	#logo img {
 		max-height: 100px;
 		max-width: 25%;
-	}
-
-	.section:nth-of-type(3), .section:nth-of-type(7) {
-		display: block; /* show these sections (images) on the grid on desktop */
-	}
-
-	.section:nth-of-type(5) {
-		display: none; /* DO NOT show this section (image) on the grid on desktop */
 	}
 
 }
