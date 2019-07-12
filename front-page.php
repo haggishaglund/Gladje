@@ -1,6 +1,11 @@
 <?php get_header();?>
 
-<header>
+<header> <!-- hardcoded for now -->
+	<img src="http://nmdbruttor.local/wp-content/uploads/2019/07/hero.jpg">
+	<div id="header_container">
+		<div class="header_link">Meny</div>
+		<div class="header_link">Boka</div>
+	</div>
 </header>
 
 <main>

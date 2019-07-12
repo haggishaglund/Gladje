@@ -83,6 +83,10 @@ small {
 	font-size: 0.75em;
 }
 
+a {
+	text-decoration: none;
+}
+
 /*----404----*/
 
 /*----HEADER NAVIGATION----*/
@@ -91,7 +95,9 @@ small {
 	background: #FFF;
 	height: 60px;
 	padding: 10px;
+	position: fixed;
 	width: 100%;
+	z-index: 999; /* always on top */
 }
 
 #logo img {
@@ -101,12 +107,46 @@ small {
 
 /*----HERO IMAGE----*/
 
+header {
+	height: calc(75vh - 60px);
+	width: 100%;
+	border-bottom: 10px solid #FFF;
+}
+
+header img {
+	height: 100%;
+	object-fit: cover; /* crops either the height or width, so that the image won't look stretched but still fit in its container */
+	width: 100%;
+}
+
+#header_container {
+	left: 25%;
+	margin: 0 auto;
+	position: absolute;
+	top: 35%; /* TEMPORARY!!! need to figure out how to vertically center these */
+	width: 50%;
+}
+
+.header_link {
+	background: rgba(20,231,214, 0.5); /* color #14E7D6, but adds opacity to the background ONLY (not the content) */
+	color: #FFF;
+	font-size: 2.31em;
+	font-weight: 900;
+	letter-spacing: 1px;
+	margin: 0 0 40px;
+	text-align: center;
+	text-shadow: 0 0 8px #0A1010;
+	text-transform: uppercase;
+	padding: 20px 40px;
+}
+
 /*----FRONT PAGE----*/
 
 .section {
 	background: #FFF;
 	margin: 0 40px 60px;
 	padding: 40px;
+	/* max-height: ?? probably need one, at least for the desktop version */
 }
 
 .section:first-of-type {
@@ -124,10 +164,11 @@ a .section_link {
 	background: #F010B3;
 	color: #FFF;
 	display: block;
+	font-size: 0.75em;
 	font-weight: 700;
 	height: 30px;
 	margin: 20px 0 0;
-	padding: 5px 40px 0 10px;
+	padding: 7px 40px 0 10px;
 	text-align: center;
 	text-decoration: none;
 }
@@ -143,7 +184,7 @@ a .section_link {
 	font-size: 30px; /* fixed size because it's the arrow (triangle) */
 	height: 30px;
 	line-height: 85%;
-	margin: -5px -40px 0;
+	margin: -7px -40px 0 0;
 	padding: 0px 0 0;
 	text-align: center;
 	width: 30px;
@@ -166,12 +207,12 @@ a .section_link {
 
 /*----LUNCH----*/
 
-#lunch-wrapper { /* this should be .section probaby */
+#lunch-wrapper { /* this could be .section probaby */
 		background: #FFF;
 		margin: 30px;
 		padding: 30px;
 }
-.matmenu-title { /* this should just be h5 */
+.matmenu-title { /* this can just be h5 */
 	color: #F010B3;
 	text-align: center;
 }
@@ -316,12 +357,30 @@ footer {flex-shrink: 0;}
 		padding: 80px;
 	}
 
+	/*----HERO IMAGE----*/
+
+	header {
+		height: calc(100vh - 60px);
+	}
+
+	/*----FRONT PAGE----*/
+
 	.section {
 		margin: 0;
 	}
 
 	.section:first-of-type {
 		margin: 0;
+	}
+
+	a .section_link {
+		font-size: 1em;
+		padding: 5px 50px 0 20px;
+		float: right;
+	}
+
+	.section_link_arrow {
+		margin: -5px -50px 0 0;
 	}
 
 	.section img {
