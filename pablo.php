@@ -11,9 +11,29 @@ else {
 }
  wp_head();
 
-echo"<div id='pablo_hero'>"; the_content();
-the_post_thumbnail('hero_image');
- echo"</div>";
+
+ echo"<div id='front_wrapper'>";
+
+ if( have_posts() ){
+
+   echo "<div class='site-container'>";
+
+   while( have_posts() ){
+
+       the_post();
+      echo" <div class='front_parent'>";
+
+  //Display the hero image and content
+  echo"<div id='pablo_hero'>";
+  the_post_thumbnail('hero_image');
+   echo"</div>";
+     /*echo"<p class='front_title'>"; the_title(); echo"</p>";
+    // echo"<div class='pablo_content'>"; the_content(); echo"</div>";
+
+   echo "</div>"; //This is the page parent */
+
+   }
+ }
 ?>
 
 <div class="pablo_hero_container">
@@ -24,22 +44,12 @@ the_post_thumbnail('hero_image');
 <main class="pablo_main">
 
   <div class="pablo_section">
-    <h5 id="pablo_title1">ÖPPETTIDER</h5>
-    <p>Ons &ndash; lör  17 &ndash; 00</p>
-    <p>Sön &ndash; tis  Stängt</p>
+    <h5 id="pablo_title1"><?php the_title() ?></h5>
+    <div class="pablo_content"><?php the_content() ?></div>
   </div>
 
   <div class="pablo_section">
     <img src="">
-  </div>
-
-  <div class="pablo_section">
-    <h5 id="pablo_title2">OM PABLO</h5>
-    <p>Hola compadre!
-        Det här är ingen vanlig tacorestaurang..
-        Här hittar du den genuina mexikanska matlagningen!
-        En skön och schysst restaurang som är tungt inspirerad av det mexikanska köket, men med inslag av fusion i en grymt charmig och häng-vänlig miljö.
-        Taco in, Taco out!</p>
   </div>
 
   <div class="pablo_section">
@@ -51,29 +61,6 @@ the_post_thumbnail('hero_image');
 <?php
 
 //combine these two laterss
-
-echo"<div id='front_wrapper'>";
-
-if( have_posts() ){
-
-  echo "<div class='site-container'>";
-
-  while( have_posts() ){
-
-      the_post();
-      ?>
-      <div class="front_parent">
-
-      <?php
-    //Display the hero image and content
-    the_post_thumbnail('hero_image');
-    //echo"<p class='front_title'>"; the_title(); echo"</p>";
-    echo"<div class='pablo_content'>"; the_content(); echo"</div>";
-
-  echo "</div>"; //This is the page parent
-
-  }
-}
 
     $args = array(
     'post_type' => 'mat', //This will probably have to change, we don't want food on here

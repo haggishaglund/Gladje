@@ -43,7 +43,20 @@
 		)
 		);
 	}*/
+	function create_mat_type(){
+	  $labels = array(
+	    'name' => _x( 'Mat typer', 'Taxonomy General Name', 'mat-tema' ),
+	  );
 
+	  $args = array(
+	    'labels'=> $labels,
+	    'hierarchical'=> true,
+	    'query_var' => 'mat_typer',
+	  );
+
+	  register_taxonomy( 'mat_typer', array('mat'), $args );
+	}
+	add_action( 'init', 'create_mat_type' );
 
 //Website Support
 add_theme_support('post-thumbnails');
@@ -52,7 +65,7 @@ add_theme_support('post-formats');
 //add_action( 'init', 'register_my_menus' );
 add_image_size('hero_image',1000,300,true);
 add_image_size('grid_image',300,300,true);
-add_image_size('logo_image', 1,1,true );
+add_image_size('logo_image', 20,20,true );
 
 
 // add custom logo
