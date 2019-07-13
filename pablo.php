@@ -10,7 +10,15 @@ else {
  get_header();
 }
  wp_head();
+
+echo"<div id='pablo_hero'>"; the_content();
+the_post_thumbnail('hero_image');
+ echo"</div>";
 ?>
+
+<div class="pablo_hero_container">
+  <div class="pablo_hero_link">BOKA BORD</div>
+</div>
 
 
 <main class="pablo_main">
