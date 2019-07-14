@@ -135,6 +135,7 @@ header {
 	height: calc(75vh - 70px);
 	width: 100%;
 	border-bottom: 10px solid #FFF;
+	margin: 60px 0 0;
 }
 
 header img {
@@ -425,6 +426,7 @@ footer {flex-shrink: 0;}
 
 	header {
 		height: calc(100vh - 60px);
+		margin: 80px 0 0;
 	}
 
 	/*----FRONT PAGE----*/
