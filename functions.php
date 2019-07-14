@@ -1,6 +1,6 @@
 <?php
 
-function create_posttype() {
+function create_post_type() {
   register_post_type( 'gladje_lunch',
     array(
       'labels' => array(
@@ -13,9 +13,41 @@ function create_posttype() {
     )
   );
 }
-add_action( 'init', 'create_posttype' );
 
-	function food_post_type(){
+add_action( 'init', 'create_post_type' );
+
+function lunch_post_type() {
+	$args = array(
+			'public' => true,
+			'menu_icon' => 'dashicons-text-page',
+			'hierarchical' => false,
+			'supports' => array('title','thumbnail'),
+			'has_archive' => true,
+
+		'taxonomies' => array('all'),
+		'labels' => array(
+		'name'               => __( 'Mat',                        'mat-textdomain' ),
+		'singular_name'      => __( 'Mat',                        'mat-textdomain' ),
+		'menu_name'          => __( 'Mat',                        'mat-textdomain' ),
+		'name_admin_bar'     => __( 'Lägg till ny maträtt',       'mat-textdomain' ),
+		'add_new'            => __( 'Lägg till',                  'mat-textdomain' ),
+		'add_new_item'       => __( 'Lägg till ny maträtt',       'mat-textdomain' ),
+		'edit_item'          => __( 'Ändra maträtt',              'mat-textdomain' ),
+		'new_item'           => __( 'Ny maträtt',                 'mat-textdomain' ),
+		'view_item'          => __( 'Visa maträtt',               'mat-textdomain' ),
+		'search_items'       => __( 'Sök maträtt',                'mat-textdomain' ),
+		'not_found'          => __( 'Ingen maträtt hittad',       'mat-textdomain' ),
+		'not_found_in_trash' => __( 'Ingen maträtt i papperskorgen','mat-textdomain' ),
+		'all_items'          => __( 'Visa ALLA maträtter',        'mat-textdomain' ),
+	),
+);
+	register_post_type('lunch',$args);
+}
+
+add_action( 'init', 'lunch_post_type' );
+
+
+function food_post_type(){
 	$args = array(
 			'public' => true,
 			'menu_icon' => 'dashicons-text-page',
@@ -45,7 +77,6 @@ add_action( 'init', 'create_posttype' );
 	);
 	register_post_type('mat',$args);
 }
-//	add_action('init','mat_post_type');
 
 	//I think we need to register the taxonomy as well
 
@@ -91,21 +122,5 @@ add_theme_support( 'custom-logo', array(
 	'flex-width'  => true,
 	'header-text' => array( 'site-title', 'site-description' ),
 ) );
-
-function create_posttype() {
-  register_post_type( 'gladje_lunch',
-    array(
-      'labels' => array(
-        'name' => __( 'Lunch' ),
-        'singular_name' => __( 'Måltid' )
-      ),
-      'public' => true,
-      'has_archive' => true,
-      'rewrite' => array('slug' => 'lunch'),
-    )
-  );
-}
-add_action( 'init', 'create_posttype' );
-
 
 ?>
