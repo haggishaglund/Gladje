@@ -1,5 +1,20 @@
 <?php
 
+function create_posttype() {
+  register_post_type( 'gladje_lunch',
+    array(
+      'labels' => array(
+        'name' => __( 'Lunch' ),
+        'singular_name' => __( 'Måltid' )
+      ),
+      'public' => true,
+      'has_archive' => true,
+      'rewrite' => array('slug' => 'lunch'),
+    )
+  );
+}
+add_action( 'init', 'create_posttype' );
+
 	function food_post_type(){
 	$args = array(
 			'public' => true,
@@ -30,7 +45,7 @@
 	);
 	register_post_type('mat',$args);
 }
-	add_action('init','mat_post_type');
+//	add_action('init','mat_post_type');
 
 //incase we want this
 /*  function register_my_menus() {
@@ -62,7 +77,20 @@ add_theme_support( 'custom-logo', array(
 	'header-text' => array( 'site-title', 'site-description' ),
 ) );
 
-
+function create_posttype() {
+  register_post_type( 'gladje_lunch',
+    array(
+      'labels' => array(
+        'name' => __( 'Lunch' ),
+        'singular_name' => __( 'Måltid' )
+      ),
+      'public' => true,
+      'has_archive' => true,
+      'rewrite' => array('slug' => 'lunch'),
+    )
+  );
+}
+add_action( 'init', 'create_posttype' );
 
 
 ?>
