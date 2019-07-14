@@ -30,9 +30,12 @@
 	);
 	register_post_type('mat',$args);
 }
-	add_action('init','mat_post_type');
 
-	//I think we need to register the taxonomy as well
+add_action('init','mat_post_type');
+
+
+
+//I think we need to register the taxonomy as well
 
 
 
