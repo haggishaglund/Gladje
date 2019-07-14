@@ -1,4 +1,8 @@
-<?php get_header();?>
+
+<?php
+/* Template Name: Lunch*/
+ get_header();
+?>
 
 <header>
 </header>
