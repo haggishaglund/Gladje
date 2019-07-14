@@ -1,10 +1,10 @@
 <?php
 
 function create_post_type() {
-  register_post_type( 'gladje_lunch',
+  register_post_type( 'Lunchmeny',
     array(
       'labels' => array(
-        'name' => __( 'Lunch' ),
+        'name' => __( 'Lunchmeny' ),
         'singular_name' => __( 'Måltid' )
       ),
       'public' => true,
@@ -18,27 +18,27 @@ add_action( 'init', 'create_post_type' );
 
 function lunch_post_type() {
 	$args = array(
-			'public' => true,
-			'menu_icon' => 'dashicons-text-page',
-			'hierarchical' => false,
-			'supports' => array('title','thumbnail'),
-			'has_archive' => true,
+		'public' => true,
+		'menu_icon' => 'dashicons-text-page',
+		'hierarchical' => false,
+		'supports' => array('title','thumbnail'),
+		'has_archive' => true,
 
-		'taxonomies' => array('all'),
+		'taxonomies' => array('veganskt','vegetariskt','fisk','nöt','kyckling','skaldjur','fläsk','lunch'),
 		'labels' => array(
-		'name'               => __( 'Mat',                        'mat-textdomain' ),
-		'singular_name'      => __( 'Mat',                        'mat-textdomain' ),
-		'menu_name'          => __( 'Mat',                        'mat-textdomain' ),
-		'name_admin_bar'     => __( 'Lägg till ny maträtt',       'mat-textdomain' ),
-		'add_new'            => __( 'Lägg till',                  'mat-textdomain' ),
-		'add_new_item'       => __( 'Lägg till ny maträtt',       'mat-textdomain' ),
-		'edit_item'          => __( 'Ändra maträtt',              'mat-textdomain' ),
-		'new_item'           => __( 'Ny maträtt',                 'mat-textdomain' ),
-		'view_item'          => __( 'Visa maträtt',               'mat-textdomain' ),
-		'search_items'       => __( 'Sök maträtt',                'mat-textdomain' ),
-		'not_found'          => __( 'Ingen maträtt hittad',       'mat-textdomain' ),
-		'not_found_in_trash' => __( 'Ingen maträtt i papperskorgen','mat-textdomain' ),
-		'all_items'          => __( 'Visa ALLA maträtter',        'mat-textdomain' ),
+			'name'               => __( 'Mat',                        	'lunch-textdomain' ),
+			'singular_name'      => __( 'Mat',                        	'lunch-textdomain' ),
+			'menu_name'          => __( 'Mat',                        	'lunch-textdomain' ),
+			'name_admin_bar'     => __( 'Lägg till ny maträtt',       	'lunch-textdomain' ),
+			'add_new'            => __( 'Lägg till',                  	'lunch-textdomain' ),
+			'add_new_item'       => __( 'Lägg till ny maträtt',       	'lunch-textdomain' ),
+			'edit_item'          => __( 'Ändra maträtt',              	'lunch-textdomain' ),
+			'new_item'           => __( 'Ny maträtt',                 	'lunch-textdomain' ),
+			'view_item'          => __( 'Visa maträtt',               	'lunch-textdomain' ),
+			'search_items'       => __( 'Sök maträtt',                	'lunch-textdomain' ),
+			'not_found'          => __( 'Ingen maträtt hittad',       	'lunch-textdomain' ),
+			'not_found_in_trash' => __( 'Ingen maträtt i papperskorgen','lunch-textdomain' ),
+			'all_items'          => __( 'Visa ALLA maträtter',        	'lunch-textdomain' ),
 	),
 );
 	register_post_type('lunch',$args);
@@ -78,15 +78,9 @@ function food_post_type(){
 	register_post_type('mat',$args);
 }
 
-add_action('init','mat_post_type');
-
-
+//add_action('init','mat_post_type');
 
 //I think we need to register the taxonomy as well
-
-
-
-
 
 function create_mattype(){
 	$labels = array(
