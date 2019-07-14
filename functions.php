@@ -47,6 +47,8 @@ function lunch_post_type() {
 add_action( 'init', 'lunch_post_type' );
 
 
+
+
 function mat_post_type(){
 	$args = array(
 			'public' => true,
@@ -136,5 +138,10 @@ add_theme_support( 'custom-logo', array(
 	'flex-width'  => true,
 	'header-text' => array( 'site-title', 'site-description' ),
 ) );
+
+
+
+get_template_part('acf');
+
 
 ?>
