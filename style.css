@@ -236,6 +236,7 @@ a .section_link {
 /*----PABLO----*/
 
 #pablo_hero{
+	height: calc(75vh - 70px);
 	width: 100%;
 
 }
@@ -278,10 +279,15 @@ a .section_link {
 	padding: 20px 40px;
 }
 
+/*.wp-block-image{
+	width:360px;
+	height: 279px;
+} */
+
 /*----PABLO FOOTER----*/
 
 footer {
-	background: rgba(255,144,0, 0.8); /* color #14E7D6, but adds opacity to the background ONLY (not the content) */
+	background: rgba(255,144,0); /* color #14E7D6, but adds opacity to the background ONLY (not the content) */
 	color: #FFF;
 	padding: 0 40px 40px;
 }
