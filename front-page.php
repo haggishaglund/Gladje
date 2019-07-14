@@ -1,6 +1,7 @@
 <?php get_header();?>
 
 <header> <!-- hardcoded for now -->
+	<?php the_post_thumbnail('hero_image'); ?>
 	<img src="http://nmdbruttor.local/wp-content/uploads/2019/07/hero.jpg">
 	<div id="header_container">
 		<div class="header_link">Meny</div>

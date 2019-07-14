@@ -1,6 +1,6 @@
 <?php
 
-	function food_post_type(){
+	function mat_post_type(){
 	$args = array(
 			'public' => true,
 			'menu_icon' => 'dashicons-text-page',
@@ -34,29 +34,38 @@
 
 	//I think we need to register the taxonomy as well
 
-//incase we want this
-/*  function register_my_menus() {
+
+
+
+
+function create_mattype(){
+	$labels = array(
+		'name' => _x( 'Mattyper', 'Taxonomy General Name', 'mat-tema' ),
+	);
+
+	$args = array(
+		'labels'=> $labels,
+		'hierarchical'=> true,
+		'query_var' => 'mattyper',
+	);
+
+	register_taxonomy( 'mattyper', array('mat'), $args );
+}
+add_action( 'init', 'create_mattype' );
+
+
+
+
+function register_my_menus() {
 		 register_nav_menus(
 			array(
-		'header-menu' => __( 'Header Menu' ),
-		'extra-menu' => __( 'Extra Menu' )
-		)
+				'header-menu' => __( 'Header Menu' )
+			)
 		);
-	}*/
-	function create_mat_type(){
-	  $labels = array(
-	    'name' => _x( 'Mat typer', 'Taxonomy General Name', 'mat-tema' ),
-	  );
+} // end function register_my_menus()
 
-	  $args = array(
-	    'labels'=> $labels,
-	    'hierarchical'=> true,
-	    'query_var' => 'mat_typer',
-	  );
 
-	  register_taxonomy( 'mat_typer', array('mat'), $args );
-	}
-	add_action( 'init', 'create_mat_type' );
+
 
 //Website Support
 add_theme_support('post-thumbnails');
