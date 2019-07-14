@@ -286,8 +286,12 @@ a .section_link {
 	left: 25%;
 	margin: 0 auto;
 	position: absolute;
-	top: 35%; /* TEMPORARY!!! need to figure out how to vertically center these */
+	top: 35%; /*TEMPORARY!!! need to figure out how to vertically center these*/
 	width: 50%;
+}
+
+.pablo_content p{
+		text-align: center;
 }
 
 .pablo_hero_link {
