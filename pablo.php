@@ -62,11 +62,11 @@ else {
 
 //combine these two laterss
 
-    $args = array(
+  /*  $args = array(
     'post_type' => 'mat', //This will probably have to change, we don't want food on here
     'post_status' => 'publish',
     'posts_per_page' => 6,
-    );
+  );*/
 
     $query = new wp_query($args);
     if ($query->have_posts() ){

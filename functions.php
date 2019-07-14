@@ -47,7 +47,9 @@ function lunch_post_type() {
 add_action( 'init', 'lunch_post_type' );
 
 
-function food_post_type(){
+
+
+function mat_post_type(){
 	$args = array(
 			'public' => true,
 			'menu_icon' => 'dashicons-text-page',
@@ -107,6 +109,7 @@ function register_my_menus() {
 			)
 		);
 } // end function register_my_menus()
+add_action( 'init', 'register_my_menus' );
 
 
 
@@ -116,7 +119,7 @@ add_theme_support('post-thumbnails');
 add_theme_support('post-formats');
 
 //add_action( 'init', 'register_my_menus' );
-add_image_size('hero_image',1200,800,true);
+add_image_size('hero_image',1520,620,true);
 add_image_size('grid_image',360,279,true);
 add_image_size('logo_image', 20,20,true );
 
@@ -129,5 +132,10 @@ add_theme_support( 'custom-logo', array(
 	'flex-width'  => true,
 	'header-text' => array( 'site-title', 'site-description' ),
 ) );
+
+
+
+get_template_part('acf');
+
 
 ?>
