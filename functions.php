@@ -72,7 +72,7 @@ add_theme_support('post-thumbnails');
 add_theme_support('post-formats');
 
 //add_action( 'init', 'register_my_menus' );
-add_image_size('hero_image',1200,800,true);
+add_image_size('hero_image',1520,620,true);
 add_image_size('grid_image',360,279,true);
 add_image_size('logo_image', 20,20,true );
 
