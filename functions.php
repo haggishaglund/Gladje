@@ -47,7 +47,7 @@ function lunch_post_type() {
 add_action( 'init', 'lunch_post_type' );
 
 
-function food_post_type(){
+function mat_post_type(){
 	$args = array(
 			'public' => true,
 			'menu_icon' => 'dashicons-text-page',
