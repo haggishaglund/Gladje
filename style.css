@@ -46,6 +46,7 @@ BLACK		#0A1010
 h1, h2, h3, h4, h5, h6 {
 	font-weight: 900;
 	letter-spacing: 1px;
+	text-align: center;
 	text-transform: uppercase;
 }
 
@@ -75,10 +76,15 @@ h6 {
 
 p {
 	font-size: 1em;
+	padding: 20px 0 0;
 }
 
 small {
 	font-size: 0.75em;
+}
+
+a {
+	text-decoration: none;
 }
 
 /*----404----*/
@@ -89,7 +95,9 @@ small {
 	background: #FFF;
 	height: 60px;
 	padding: 10px;
+	position: fixed;
 	width: 100%;
+	z-index: 999; /* always on top */
 }
 
 #logo img {
@@ -99,28 +107,50 @@ small {
 
 /*----HERO IMAGE----*/
 
+header {
+	height: calc(75vh - 70px);
+	width: 100%;
+	border-bottom: 10px solid #FFF;
+}
+
+header img {
+	height: 100%;
+	object-fit: cover; /* crops either the height or width, so that the image won't look stretched but still fit in its container */
+	width: 100%;
+}
+
+#header_container {
+	left: 25%;
+	margin: 0 auto;
+	position: absolute;
+	top: 35%; /* TEMPORARY!!! need to figure out how to vertically center these */
+	width: 50%;
+}
+
+.header_link {
+	background: rgba(20,231,214, 0.5); /* color #14E7D6, but adds opacity to the background ONLY (not the content) */
+	color: #FFF;
+	font-size: 2.31em;
+	font-weight: 900;
+	letter-spacing: 1px;
+	margin: 0 0 40px;
+	text-align: center;
+	text-shadow: 0 0 8px #0A1010;
+	text-transform: uppercase;
+	padding: 20px 40px;
+}
+
 /*----FRONT PAGE----*/
 
 .section {
 	background: #FFF;
 	margin: 0 40px 60px;
+	padding: 40px;
+	/* max-height: ?? probably need one, at least for the desktop version */
 }
 
 .section:first-of-type {
 	margin: 60px 40px;
-}
-
-.section h5 {
-	padding: 40px 40px 0;
-	text-align: center;
-}
-
-.section p {
-	padding: 20px 40px 0px;
-}
-
-.section p:last-of-type { /* last paragraph adds more padding to the white section box */
-	padding: 20px 40px 40px;
 }
 
 .sub_heading { /* for example: time for after work under the section title */
@@ -134,10 +164,11 @@ a .section_link {
 	background: #F010B3;
 	color: #FFF;
 	display: block;
+	font-size: 0.75em;
 	font-weight: 700;
 	height: 30px;
-	margin: -20px 40px 0;
-	padding: 5px 40px 0 10px;
+	margin: 20px 0 0;
+	padding: 7px 40px 0 10px;
 	text-align: center;
 	text-decoration: none;
 }
@@ -153,18 +184,14 @@ a .section_link {
 	font-size: 30px; /* fixed size because it's the arrow (triangle) */
 	height: 30px;
 	line-height: 85%;
-	margin: -5px -40px 0;
+	margin: -7px -40px 0 0;
 	padding: 0px 0 0;
 	text-align: center;
 	width: 30px;
 }
 
-.space {
-	height: 40px;
-}
-
 .section img {
-	margin: 0 -40px;
+	margin: -40px -80px;
 	width: 100vw;
 }
 
@@ -180,16 +207,16 @@ a .section_link {
 
 /*----LUNCH----*/
 
-#lunch-wrapper {
+#lunch-wrapper { /* this could be .section probaby */
 		background: #FFF;
 		margin: 30px;
 		padding: 30px;
 }
-.matmenu-title {
+.matmenu-title { /* this can just be h5 */
 	color: #F010B3;
 	text-align: center;
 }
-#lunch-price {
+#lunch-price { /* sub_heading probably */
 	text-align: center;
 	text-transform: none;
 }
@@ -208,6 +235,11 @@ a .section_link {
 
 /*----PABLO----*/
 
+#pablo_hero{
+	width: 100%;
+
+}
+
 .pablo_section {
 }
 
@@ -221,19 +253,44 @@ a .section_link {
 }
 
 #pablo_title2 {
-	color:#1B9937;
+	color: #1B9937;
 	text-align: center;
+}
+
+.pablo_hero_container {
+	left: 25%;
+	margin: 0 auto;
+	position: absolute;
+	top: 35%; /* TEMPORARY!!! need to figure out how to vertically center these */
+	width: 50%;
+}
+
+.pablo_hero_link {
+	background: rgba(27,153,55, 0.8); /* color #14E7D6, but adds opacity to the background ONLY (not the content) */
+	color: #FFF;
+	font-size: 2.31em;
+	font-weight: 900;
+	letter-spacing: 1px;
+	margin: 0 0 40px;
+	text-align: center;
+	text-shadow: 0 0 8px #0A1010;
+	text-transform: uppercase;
+	padding: 20px 40px;
 }
 
 /*----PABLO FOOTER----*/
 
 footer {
-	background: rgba(255,144,0, 0.5); /* color #14E7D6, but adds opacity to the background ONLY (not the content) */
+	background: rgba(255,144,0, 0.8); /* color #14E7D6, but adds opacity to the background ONLY (not the content) */
 	color: #FFF;
 	padding: 0 40px 40px;
 }
 
 .pablo_footer_section { /* we need these for the grid in the footer */
+	text-align: center;
+}
+
+.pablo_footer_head{
 	text-align: center;
 }
 
@@ -276,6 +333,7 @@ footer {
 
 footer h6 {
 	padding: 30px 0 10px;
+	text-align: left;
 }
 
 footer ul {
@@ -329,6 +387,14 @@ footer {flex-shrink: 0;}
 		padding: 80px;
 	}
 
+	/*----HERO IMAGE----*/
+
+	header {
+		height: calc(100vh - 60px);
+	}
+
+	/*----FRONT PAGE----*/
+
 	.section {
 		margin: 0;
 	}
@@ -337,11 +403,29 @@ footer {flex-shrink: 0;}
 		margin: 0;
 	}
 
+	a .section_link {
+		font-size: 1em;
+		padding: 5px 50px 0 20px;
+		float: right;
+	}
+
+	.section_link_arrow {
+		margin: -5px -50px 0 0;
+	}
+
 	.section img {
-		height: 100%;
-		margin: 0;
+		height: calc(100% + 80px); /* full width plus the removed margin which is 40px ov every side */
+		margin: -40px;
 		object-fit: cover; /* crops either the height or width, so that the image won't look stretched but still fit in its .section*/
-		width: 100%;
+		width: calc(100% + 80px); /* full width plus the removed margin which is 40px ov every side */
+	}
+
+	.section:nth-of-type(3), .section:nth-of-type(7) {
+		display: block; /* show these sections (images) on the grid on desktop */
+	}
+
+	.section:nth-of-type(5) {
+		display: none; /* DO NOT show this section (image) on the grid on desktop */
 	}
 
 	/*----HEADER NAVIGATION----*/
@@ -354,14 +438,6 @@ footer {flex-shrink: 0;}
 	#logo img {
 		max-height: 100px;
 		max-width: 25%;
-	}
-
-	.section:nth-of-type(3), .section:nth-of-type(7) {
-		display: block; /* show these sections (images) on the grid on desktop */
-	}
-
-	.section:nth-of-type(5) {
-		display: none; /* DO NOT show this section (image) on the grid on desktop */
 	}
 
 }
