@@ -1,6 +1,6 @@
 <?php wp_footer();?>
 
-<footer>
+<footer id="pablo_footer">
 
 	<div class="pablo_footer_section">
 		<h6 class="pablo_footer_head">Kontakt</h6>

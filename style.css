@@ -260,18 +260,28 @@ a .section_link {
 
 /*----PABLO----*/
 
+.pablo_main {
+	background: #FFFEF8;
+}
+
 #pablo_hero{
 	height: calc(75vh - 70px);
-	width: 100%;
-
+	width: 300px;
 }
+
+
+.pablo_hero_container {
+	left: 25%;
+	margin: 0 auto;
+	position: absolute;
+	top: 35%; /*TEMPORARY!!! need to figure out how to vertically center these*/
+	width: 50%;
+}
+
 
 .pablo_section {
 }
 
-.pablo_main {
-	background: #FFFEF8;
-}
 
 #pablo_title1 {
 	color: #FC3F1D;
@@ -281,14 +291,6 @@ a .section_link {
 #pablo_title2 {
 	color: #1B9937;
 	text-align: center;
-}
-
-.pablo_hero_container {
-	left: 25%;
-	margin: 0 auto;
-	position: absolute;
-	top: 35%; /*TEMPORARY!!! need to figure out how to vertically center these*/
-	width: 50%;
 }
 
 .pablo_content p{
@@ -319,6 +321,12 @@ footer {
 	background: rgba(255,144,0); /* color #14E7D6, but adds opacity to the background ONLY (not the content) */
 	color: #FFF;
 	padding: 0 40px 40px;
+}
+
+#pablo_footer{
+	margin-top: 10px;
+	background: rgba(255,144,0); /* color #14E7D6, but adds opacity to the background ONLY (not the content) */
+
 }
 
 .pablo_footer_section { /* we need these for the grid in the footer */
