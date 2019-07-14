@@ -29,6 +29,7 @@
 
 	<div class="footer_section">
 		<h6>Öppettider</h6>
+		<!-- Insåg att mina öppettider bara funkar på startsidan så tror vi behöver en footer plugin -->
 		<?php get_template_part('openinghours'); ?>
 	</div>
 

@@ -10,14 +10,19 @@
 <?php the_post(); ?>
 
 <div class="section">
-
 	<h5><?php the_title(); ?></h5>
-
 	<?php the_content(); ?>
-
 </div>
 
 <?php } ?> <!-- end WHILE(HAVE_POSTS) -->
+
+
+
+<div class="section">
+	<h5>Prislista</h5>
+</div>
+
+
 
 </main>
 
