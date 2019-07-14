@@ -78,39 +78,52 @@ function food_post_type(){
 	register_post_type('mat',$args);
 }
 
-	//I think we need to register the taxonomy as well
+add_action('init','mat_post_type');
 
-//incase we want this
-/*  function register_my_menus() {
+
+
+//I think we need to register the taxonomy as well
+
+
+
+
+
+function create_mattype(){
+	$labels = array(
+		'name' => _x( 'Mattyper', 'Taxonomy General Name', 'mat-tema' ),
+	);
+
+	$args = array(
+		'labels'=> $labels,
+		'hierarchical'=> true,
+		'query_var' => 'mattyper',
+	);
+
+	register_taxonomy( 'mattyper', array('mat'), $args );
+}
+add_action( 'init', 'create_mattype' );
+
+
+
+
+function register_my_menus() {
 		 register_nav_menus(
 			array(
-		'header-menu' => __( 'Header Menu' ),
-		'extra-menu' => __( 'Extra Menu' )
-		)
+				'header-menu' => __( 'Header Menu' )
+			)
 		);
-	}*/
-	function create_mat_type(){
-	  $labels = array(
-	    'name' => _x( 'Mat typer', 'Taxonomy General Name', 'mat-tema' ),
-	  );
+} // end function register_my_menus()
 
-	  $args = array(
-	    'labels'=> $labels,
-	    'hierarchical'=> true,
-	    'query_var' => 'mat_typer',
-	  );
 
-	  register_taxonomy( 'mat_typer', array('mat'), $args );
-	}
-	add_action( 'init', 'create_mat_type' );
+
 
 //Website Support
 add_theme_support('post-thumbnails');
 add_theme_support('post-formats');
 
 //add_action( 'init', 'register_my_menus' );
-add_image_size('hero_image',1000,300,true);
-add_image_size('grid_image',300,300,true);
+add_image_size('hero_image',1200,800,true);
+add_image_size('grid_image',360,279,true);
 add_image_size('logo_image', 20,20,true );
 
 
