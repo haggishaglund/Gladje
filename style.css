@@ -258,6 +258,28 @@ a .section_link {
 
 /*----AFTER WORK----*/
 
+.item {
+	float: left;
+	font-size: 1.31em;
+	font-weight: 900;
+}
+
+.item_price {
+	float: right;
+}
+
+.item_desc {
+	float: left;
+	font-size: 0.75em;
+}
+
+.subtle_text {
+	color: #BBB;
+	float: right;
+	font-size: 0.75em;
+	text-align: right;
+}
+
 /*----PABLO----*/
 
 .pablo_main {
