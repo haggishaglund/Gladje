@@ -106,6 +106,7 @@ a {
 }
 
 #top_nav ul {
+	display: none; /* TILLFÄLLIGT */
 	/* float: right;
 	list-style-type: none;
 	text-transform: uppercase;
@@ -145,24 +146,23 @@ header img {
 }
 
 #header_container {
-	left: 25%;
-	margin: 0 auto;
 	position: absolute;
-	top: 35%; /* TEMPORARY!!! need to figure out how to vertically center these */
-	width: 50%;
+	top: calc(30%); /* TILLFÄLLIGT */
+	width: 100%;
 }
 
 .header_link {
-	background: rgba(20,231,214, 0.5); /* color #14E7D6, but adds opacity to the background ONLY (not the content) */
+	background: rgba(20,231,214, 0.7); /* color #14E7D6, but adds opacity to the background ONLY (not the content) */
 	color: #FFF;
 	font-size: 2.31em;
 	font-weight: 900;
 	letter-spacing: 1px;
-	margin: 0 0 40px;
+	margin: 0 auto 40px;
 	text-align: center;
 	text-shadow: 0 0 8px #0A1010;
 	text-transform: uppercase;
 	padding: 20px 40px;
+	width: fit-content;
 }
 
 /*----FRONT PAGE----*/
@@ -487,6 +487,16 @@ footer {flex-shrink: 0;}
 	header {
 		height: calc(100vh - 140px);
 		margin: 80px 0 0;
+	}
+
+	#header_container {
+		top: calc(50%);
+	}
+
+	.header_link {
+		width: 25%;
+		float: left;
+		margin: 0 40px 0;
 	}
 
 	/*----FRONT PAGE----*/
