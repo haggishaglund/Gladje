@@ -29,8 +29,21 @@
 
 	<div class="footer_section">
 		<h6>Öppettider</h6>
-		<!-- Insåg att mina öppettider bara funkar på startsidan så tror vi behöver en footer plugin -->
-		<?php get_template_part('openinghours'); ?>
+
+			<p><strong>À la carte</strong><br/>
+			Mån &ndash; tors &emsp; 17:00 &ndash; 22:00<br/>
+			Fre &emsp; 20:00 – 20:00<br/>
+			Lör &emsp; 17:00 – 22:00</p>
+
+			<p><strong>Lunch</strong><br/>
+			Fre &emsp; 11:30 &ndash; 15:00</p>
+
+			<p><strong>Nattklubb</strong><br/>
+			Fre &ndash; lör &emsp; 22:00 &ndash; 02:00</p>
+
+			<p><strong>After work</strong><br/>
+			Fre &emsp; 17:00 &ndash; 20:00</p>
+
 	</div>
 
 </footer>
