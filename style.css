@@ -171,7 +171,6 @@ header img {
 	background: #FFF;
 	margin: 0 40px 60px;
 	padding: 40px;
-	/* max-height: ?? probably need one, at least for the desktop version */
 }
 
 .section:first-of-type {
@@ -185,7 +184,7 @@ header img {
 	padding: 5px 40px 0 !important;
 }
 
-a .section_link {
+a .section_link { 
 	background: #F010B3;
 	color: #FFF;
 	display: block;
@@ -241,23 +240,27 @@ a .section_link {
 		margin: 30px;
 		padding: 30px;
 }
+
 .matmenu-title { /* this can just be h5 */
 	color: #F010B3;
 	text-align: center;
 }
+
 #lunch-price { /* sub_heading probably */
 	text-align: center;
 	text-transform: none;
 }
+
 .lunch-item {
 	margin: 10px 0 40px;
 	text-align: center;
 }
+
 .lunch-item h5 {
 	margin-bottom: 10px;
 }
-.lunch-item p {
 
+.lunch-item p {
 }
 
 /*----AFTER WORK----*/
@@ -265,7 +268,7 @@ a .section_link {
 .menu {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: auto auto;
+	grid-template-rows: auto auto;
 	grid-gap: 0 0;
 	gap: 0 0;
 	grid-auto-columns: 1fr;
@@ -469,6 +472,7 @@ footer {flex-shrink: 0;}
 	main {
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(3, auto);
 		grid-gap: 0 0;
 		gap: 0 0;
 		grid-auto-columns: 1fr;
@@ -489,6 +493,7 @@ footer {flex-shrink: 0;}
 
 	.section {
 		margin: 0;
+		min-height: 300px;
 	}
 
 	.section:first-of-type {
@@ -506,9 +511,10 @@ footer {flex-shrink: 0;}
 	}
 
 	.section img {
-		height: calc(100% + 80px); /* full width plus the removed margin which is 40px ov every side */
+		max-height: calc(100% + 80px); /* full width plus the removed margin which is 40px ov every side */
+		min-height: calc(100% + 80px); /* full width plus the removed margin which is 40px ov every side */
 		margin: -40px -40px -44px;
-		object-fit: cover; /* crops either the height or width, so that the image won't look stretched but still fit in its .section*/
+		object-fit: cover; /* crops either the height or width, so that the image won't look stretched but still fit in its parent .section*/
 		width: calc(100% + 80px); /* full width plus the removed margin which is 40px ov every side */
 	}
 
