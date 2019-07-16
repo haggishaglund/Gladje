@@ -7,7 +7,6 @@
 		<link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i,900,900i&display=swap" rel="stylesheet">
 		<title><?php bloginfo('name'); ?> – <?php bloginfo('description'); ?></title>
 		<?php wp_head();?>
-		<title></title>
 	</head>
 
 <body>
