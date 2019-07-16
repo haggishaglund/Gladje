@@ -106,19 +106,19 @@ a {
 }
 
 #top_nav ul {
-	float: right;
+	/* float: right;
 	list-style-type: none;
 	text-transform: uppercase;
-	margin: -90px 0 0;
+	margin: -90px 0 0; */
 }
 
 .sub_menu { /* drop down MENYER */
-	margin: 0 0 -90px;
+	/*margin: 0 0 -90px; */
 }
 
 #top_nav li {
-	float: left;
-	padding: 0 0 0 30px;
+	/* float: left;
+	padding: 0 0 0 30px; */
 }
 
 #top_nav li a {
@@ -220,8 +220,12 @@ a .section_link {
 	width: 100vw;
 }
 
-.section:nth-of-type(3), .section:nth-of-type(7) {
+.mobile_hide {
 	display: none; /* DO NOT show these sections (images) on mobile */
+}
+
+.desktop_hide {
+	display: block; /* show these sections (images) on the grid on mobile (while hidden on desktop) */
 }
 
 /*----BOKA BORD----*/
@@ -259,13 +263,16 @@ a .section_link {
 /*----AFTER WORK----*/
 
 .menu {
-	display: inline-grid;
+	display: grid;
 	grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto auto;
 	grid-gap: 0 0;
 	gap: 0 0;
 	grid-auto-columns: 1fr;
 	grid-auto-rows: 1fr;
+	margin: auto;
+	max-width: 500px;
+	width: 100%;
 }
 
 .item {
@@ -500,17 +507,17 @@ footer {flex-shrink: 0;}
 
 	.section img {
 		height: calc(100% + 80px); /* full width plus the removed margin which is 40px ov every side */
-		margin: -40px;
+		margin: -40px -40px -44px;
 		object-fit: cover; /* crops either the height or width, so that the image won't look stretched but still fit in its .section*/
 		width: calc(100% + 80px); /* full width plus the removed margin which is 40px ov every side */
 	}
 
-	.section:nth-of-type(3), .section:nth-of-type(7) {
-		display: block; /* show these sections (images) on the grid on desktop */
+	.mobile_hide {
+		display: block; /* show these sections (images) on the grid on desktop (while hidden on mobile) */
 	}
 
-	.section:nth-of-type(5) {
-		display: none; /* DO NOT show this section (image) on the grid on desktop */
+	.desktop_hide {
+		display: none; /* DO NOT show these sections (images) on the grid on desktop */
 	}
 
 	/*----HEADER NAVIGATION----*/
