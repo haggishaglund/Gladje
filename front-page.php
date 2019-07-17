@@ -3,8 +3,8 @@
 <header>
 	<?php the_post_thumbnail('hero_image'); ?>
 	<div id="header_container">
-		<div class="header_link">Meny</div>
-		<div class="header_link">Boka</div>
+		<a href="#"><div class="header_link">Meny</div></a>
+		<a href="#"><div class="header_link">Boka</div></a>
 	</div>
 </header>
 
