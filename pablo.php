@@ -3,7 +3,7 @@
   Template Name: pablo
 */
 
-if(is_page(7-2)) { //This number will be changed later so that it suits pablo's page
+if(is_page('pablo')) {
  get_header('pablo');
 }
 else {
@@ -11,37 +11,33 @@ else {
 }
  wp_head();
  ?>
+
  <body class="pablo_main">
+
  <?php
+ echo"<header>";
+ the_post_thumbnail('hero_image');
+  echo"</header>";
 
  if( have_posts() ){
    while( have_posts() ){
        the_post();
+
+      echo" <div class='pablo_hero_container'>";
+         echo"<div class='pablo_hero_link'>BOKA BORD</div>";
+      echo"</div>";
+
+      /* echo"<div class='pablo_section'>";
+         echo"<h5 id='pablo_title1'>"; the_title(); echo"</h5>";
+         echo"<div class='pablo_content'>"; the_content(); echo"</div>";
+         echo"<div class='pablo_grid_image'>"; the_post_thumbnail('grid_image'); echo"</div>";
+         echo"</div>";*/
    }
  }
 
- //Display the hero image and content
- echo"<div id='pablo_hero'>";
- the_post_thumbnail('hero_image');
-  echo"</div>";
-?>
-<div class="pablo_hero_container">
-  <div class="pablo_hero_link">BOKA BORD</div>
-</div>
 
-  <div class="pablo_section">
-    <!--<h5 id="pablo_title1"><?php //the_title() ?></h5>-->
-    <div class="pablo_content"><?php the_content() ?></div>
-  </div>
-
-</body>
-
-<?php
-
-//combine these two laterss
-
-  /*  $args = array(
-    'post_type' => 'mat', //This will probably have to change, we don't want food on here
+    $args = array(
+    'post_type' => 'Pablo',
     'post_status' => 'publish',
     'posts_per_page' => 6,
   );
@@ -51,10 +47,10 @@ else {
 
     while ($query->have_posts()){
     $query->the_post();
-    echo"<div class='grid_wrapper'>";
-    echo"<div class='grid_image'>";
-    echo"</div>";
-    echo"</div>";
+    echo"<h5 class='pablo_title1'>"; the_title();  echo"</h5>";
+    echo"<div class='section'>"; the_content(); echo"</div>";
+    echo"<div class='pablo_grid_image'>"; the_post_thumbnail('grid_image'); echo"</div>";
+    
     //the_content();
     }
     }else{
@@ -62,9 +58,12 @@ else {
     }
     wp_reset_postdata();
     echo"</div>";
-    */
+    echo"</body>";
+
+    //footer
+
     echo"<div class='pablo_footer'>";
-    if(is_page(7-2)) { //This number will be changed later so that it suits pablo's page
+    if(is_page('pablo')) {
      get_footer('pablo');
     }
     else {

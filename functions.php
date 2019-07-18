@@ -98,7 +98,7 @@ add_action( 'init', 'create_mattype' );
 //I think I need this for pablo, but i'm not sure yet....
 
 
-function create_pablo_type() {
+/*function create_pablo_type() {
   register_post_type('Pablo',
     array(
       'labels' => array(
@@ -110,7 +110,7 @@ function create_pablo_type() {
       'rewrite' => array('slug' => 'Pablo'),
     )
   );
-}
+}*/
 
 //add_action('init', 'pablo_post_type');
 function pablo_post_type() {
@@ -142,6 +142,47 @@ function pablo_post_type() {
 }
 add_action('init','pablo_post_type');
 
+
+function codex_custom_init() {
+
+	register_post_type( 'Lunchmeny',
+    array(
+      'labels' => array(
+        'name' => __( 'Lunchmeny' ),
+        'singular_name' => __( 'Måltid' )
+      ),
+      'public' => true,
+      'has_archive' => true,
+      'rewrite' => array('slug' => 'lunch'),
+    )
+  );
+
+	register_post_type( 'Matmeny',
+		array(
+			'labels' => array(
+				'name' => __( 'Matmenu' ),
+				'singular_name' => __( 'Mattyper' )
+			),
+			'public' => true,
+			'has_archive' => true,
+			'rewrite' => array('slug' => 'mat'),
+		)
+	);
+
+ register_post_type('Pablo',
+ 	array(
+ 		'labels' => array(
+ 		'name' => __('Pablo'),
+ 		'singular_name' => __('Pablo')
+ 			),
+ 		'public' => true,
+ 		'has_archive' => true,
+ 		'rewrite' => array('slug' => 'Pablo'),
+ 	)
+ );
+}
+add_action( 'init', 'codex_custom_init' );
+
 /////end of taxonomies/////
 
 function register_my_menus() {
@@ -152,9 +193,6 @@ function register_my_menus() {
 		);
 } // end function register_my_menus()
 add_action( 'init', 'register_my_menus' );
-
-
-
 
 //Website Support
 add_theme_support('post-thumbnails');

@@ -211,7 +211,7 @@ header img {
 	padding: 5px 40px 0 !important;
 }
 
-a .section_link { 
+a .section_link {
 	background: #F010B3;
 	color: #FFF;
 	display: block;
@@ -366,22 +366,21 @@ a .section_link {
 
 
 .pablo_section {
-	margin-top: 20px;
+	background: #FFF;
+	margin: 30px 40px 60px;
+	padding: 40px;
 }
 
 
 #pablo_title1 {
 	color: #FC3F1D;
-	text-align: center;
 }
 
 #pablo_title2 {
 	color: #1B9937;
-	text-align: center;
 }
 
 .pablo_content p{
-		text-align: center;
 }
 
 .pablo_hero_link {

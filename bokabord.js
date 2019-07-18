@@ -1,4 +1,4 @@
-/* Funtioner f�r initiering av kommunikation mellan klient och server */
+/* Funtioner för initiering av kommunikation mellan klient och server */
 function create_request ()
 {
 	try
@@ -81,27 +81,27 @@ function cback (text)
 
 			if (response == "OK")
 			{
-				document.getElementById("bb_response").innerHTML = "Din bokning har genomf�rts.";
+				document.getElementById("bb_response").innerHTML = "Din bokning har genomförts.";
 			}
 			else if (response == "01")
 			{
-				document.getElementById("bb_response").innerHTML = "Det finns tyv�rr inga lediga bord.";
+				document.getElementById("bb_response").innerHTML = "Det finns tyvärr inga lediga bord.";
 			}
 			else if (response == "02")
 			{
-				document.getElementById("bb_response").innerHTML = "Denna tid �r inte bokningsbar.";
+				document.getElementById("bb_response").innerHTML = "Denna tid är inte bokningsbar.";
 			}
 			else if (response == "03")
 			{
-				document.getElementById("bb_response").innerHTML = "Denna dag har vi tyv�rr inte �ppet.";
+				document.getElementById("bb_response").innerHTML = "Denna dag har vi tyvärr inte öppet.";
 			}
 			else if (response == "04")
 			{
-				document.getElementById("bb_response").innerHTML = "Vi tar inte emot bokningar f�r detta datum just nu.";
+				document.getElementById("bb_response").innerHTML = "Vi tar inte emot bokningar för detta datum just nu.";
 			}
 			else
 			{
-				document.getElementById("bb_response").innerHTML = "Ett fel har uppst�t! Var god f�rs�k igen.";
+				document.getElementById("bb_response").innerHTML = "Ett fel har uppstöt! Var god försök igen.";
 			}
 		}
 
