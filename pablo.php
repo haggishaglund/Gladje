@@ -17,14 +17,13 @@ else {
  if( have_posts() ){
    while( have_posts() ){
        the_post();
-  //Display the hero image and content
-  echo"<div id='pablo_hero'>";
-  the_post_thumbnail('hero_image');
-   echo"</div>";
-     /*echo"<p class='front_title'>"; the_title(); echo"</p>";
-    // echo"<div class='pablo_content'>"; the_content(); echo"</div>";*/
    }
  }
+
+ //Display the hero image and content
+ echo"<div id='pablo_hero'>";
+ the_post_thumbnail('hero_image');
+  echo"</div>";
 ?>
 <div class="pablo_hero_container">
   <div class="pablo_hero_link">BOKA BORD</div>

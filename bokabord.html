@@ -1,0 +1,66 @@
+<html>
+<head>
+	<title>Bordsbokning</title>
+	<!-- Scrip och stilmall för bordsbokning -->
+	<script language="JavaScript" src="bokabord.js"></script>
+	<style>
+		#boka_bord
+		{
+			width: 310px;
+			font-size: 12px;
+			border: black;
+		}
+
+		#boka_bord input
+		{
+			width: 150px;
+			float:right;
+		}
+
+		#boka_bord label
+		{
+			display: block;
+			float: left;
+			width: 150px;
+			margin: 2px 4px 6px 4px;
+			text-align: right;
+		}
+	</style>
+</head>
+<body>
+<!-- Formulär för bordsbokning -->
+	<div id="boka_bord">
+		<h1>Boka bord</h1>
+		<form>
+			<p>
+				<label for="date">Datum: </label><input id="date" type="text" size="10" maxlength="10" value="2012-01-01" />
+				<label for="from">Från klockan: </label><input id="from" type="text" size="5" maxlength="5" value="12:00" />
+				<label for="to">Till klockan: </label><input id="to" type="text" size="5" maxlength="5" value="13:00" />
+				<label for="party">Antal personer: </label><input id="party" type="text" size="2" maxlength="2" value="1" />
+			</p>
+			<p>
+				<label for="area">Plats: </label>
+				<select id="area">
+					<option value="Matsal" selected="selected">Matsal</option>
+					<option value="Hallen">Hallen</option>
+				</select>
+			</p>
+			<p>
+				<label for="name">Namn: </label><input id="name" id="bb_name" type="text" size="25" value="Namn" />
+				<label for="company">Företag: </label><input id="company" id="bb_comp_name" type="text" size="25" /></span>
+			</p>
+			<p>
+				<!-- <b>Jag kan nås via:</b> -->
+				<label for="phone">Telefon: </label><input id="phone" type="text" size="16" />
+				<label for="mail">E-post: </label><input id="mail" type="text" size="25" />
+			</p>
+			<p>
+				<label for="notes">Ange övrig information h�r.</label>
+				<textarea id="notes" id="bb_note" cols="35" rows="5"></textarea>
+			</p>
+			<button id="send" type="button" onclick="submit_data()">Skicka bokning</button>
+			<div id="bb_response"></div>
+		</form>
+	</div>
+</body>
+</html>

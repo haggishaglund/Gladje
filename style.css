@@ -225,6 +225,13 @@ a .section_link {
 }
 
 /*----BOKA BORD----*/
+.boka-section {
+	background: #FFF;
+	margin: 30px 40px 60px;
+	padding: 40px;
+
+}
+
 
 /*----ALC ARCHIVE----*/
 
@@ -265,8 +272,9 @@ a .section_link {
 }
 
 #pablo_hero{
-	height: calc(75vh - 70px);
-	width: 300px;
+	margin-bottom: 40px;
+	height: 620px;
+	width: 993px;
 }
 
 
@@ -280,6 +288,7 @@ a .section_link {
 
 
 .pablo_section {
+	margin-top: 20px;
 }
 
 
