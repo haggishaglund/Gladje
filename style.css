@@ -85,6 +85,7 @@ small {
 
 a {
 	text-decoration: none;
+	transition: color 0.2s ease-in-out;
 }
 
 /*----404----*/
@@ -106,19 +107,20 @@ a {
 }
 
 #top_nav ul {
-	float: right;
+	display: none; /* TILLFÄLLIGT */
+	/* float: right;
 	list-style-type: none;
 	text-transform: uppercase;
-	margin: -90px 0 0;
+	margin: -90px 0 0; */
 }
 
 .sub_menu { /* drop down MENYER */
-	margin: 0 0 -90px;
+	/*margin: 0 0 -90px; */
 }
 
 #top_nav li {
-	float: left;
-	padding: 0 0 0 30px;
+	/* float: left;
+	padding: 0 0 0 30px; */
 }
 
 #top_nav li a {
@@ -132,7 +134,7 @@ a {
 /*----HERO IMAGE----*/
 
 header {
-	height: calc(75vh - 70px);
+	height: calc(75vh - 60px);
 	width: 100%;
 	border-bottom: 10px solid #FFF;
 	margin: 60px 0 0;
@@ -145,24 +147,49 @@ header img {
 }
 
 #header_container {
-	left: 25%;
-	margin: 0 auto;
+	display: grid;
+	grid-template-columns: 1fr auto 1fr;
+	grid-template-rows: 1fr auto 40px auto 1fr;
+	grid-gap: 0 0;
+	gap: 0 0;
+	height: calc(75vh - 70px); /* same as header minus 10px for the border */
 	position: absolute;
-	top: 35%; /* TEMPORARY!!! need to figure out how to vertically center these */
-	width: 50%;
+	top: 60px;
+	width: 100%;
 }
 
 .header_link {
-	background: rgba(20,231,214, 0.5); /* color #14E7D6, but adds opacity to the background ONLY (not the content) */
+	background: rgba(20,231,214, 0.7); /* color #14E7D6 (blue), but adds opacity to the background ONLY (not the content) */
 	color: #FFF;
 	font-size: 2.31em;
 	font-weight: 900;
 	letter-spacing: 1px;
-	margin: 0 0 40px;
+	margin: 0;
+	min-width: 180px;
+	padding: 20px 40px;
 	text-align: center;
 	text-shadow: 0 0 8px #0A1010;
 	text-transform: uppercase;
-	padding: 20px 40px;
+	transition: background 0.2s ease-in-out;
+	width: 100%;
+}
+
+.header_link:hover {
+	background: rgb(255,250,13, 0.7); /* color #FFFA0D (yellow), but adds opacity to the background ONLY (not the content) */
+}
+
+#header_container a:nth-of-type(1) {
+	grid-column-start: 2;
+	grid-column-end: 3;
+	grid-row-start: 2;
+	grid-row-end: 3;
+}
+
+#header_container a:nth-of-type(2) {
+	grid-column-start: 2;
+	grid-column-end: 3;
+	grid-row-start: 4;
+	grid-row-end: 5;
 }
 
 /*----FRONT PAGE----*/
@@ -171,7 +198,6 @@ header img {
 	background: #FFF;
 	margin: 0 40px 60px;
 	padding: 40px;
-	/* max-height: ?? probably need one, at least for the desktop version */
 }
 
 .section:first-of-type {
@@ -185,7 +211,7 @@ header img {
 	padding: 5px 40px 0 !important;
 }
 
-a .section_link {
+a .section_link { 
 	background: #F010B3;
 	color: #FFF;
 	display: block;
@@ -220,8 +246,12 @@ a .section_link {
 	width: 100vw;
 }
 
-.section:nth-of-type(3), .section:nth-of-type(7) {
+.mobile_hide {
 	display: none; /* DO NOT show these sections (images) on mobile */
+}
+
+.desktop_hide {
+	display: block; /* show these sections (images) on the grid on mobile (while hidden on desktop) */
 }
 
 /*----BOKA BORD----*/
@@ -244,26 +274,74 @@ a .section_link {
 		margin: 30px;
 		padding: 30px;
 }
+
 .matmenu-title { /* this can just be h5 */
 	color: #F010B3;
 	text-align: center;
 }
+
 #lunch-price { /* sub_heading probably */
 	text-align: center;
 	text-transform: none;
 }
+
 .lunch-item {
 	margin: 10px 0 40px;
 	text-align: center;
 }
+
 .lunch-item h5 {
 	margin-bottom: 10px;
 }
-.lunch-item p {
 
+.lunch-item p {
 }
 
 /*----AFTER WORK----*/
+
+.menu {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: auto auto;
+	grid-gap: 0 0;
+	gap: 0 0;
+	grid-auto-columns: 1fr;
+	grid-auto-rows: 1fr;
+	margin: auto;
+	max-width: 500px;
+	width: 100%;
+}
+
+.item {
+	font-size: 1.31em;
+	font-weight: 900;
+	grid-column-start: 1; /* spans across column 1 and 2 */
+	grid-column-end: 3; /* spans across column 1 and 2 */
+	padding: 20px 0 0;
+}
+
+.item_price {
+	grid-column-start: 3; /* spans across column 3 */
+	grid-column-end: 4; /* spans across column 3 */
+	padding: 20px 0 0;
+	text-align: right;
+}
+
+.item_desc {
+	font-size: 0.75em;
+	grid-column-start: 1; /* spans across column 1 and 2 */
+	grid-column-end: 3; /* spans across column 1 and 2 */
+	padding: 2px 0 0;
+}
+
+.subtle_text {
+	color: #BBB;
+	font-size: 0.75em;
+	grid-column-start: 3; /* spans across column 3 */
+	grid-column-end: 4; /* spans across column 3 */
+	text-align: right;
+	padding: 2px 0 0;
+}
 
 /*----PABLO----*/
 
@@ -430,6 +508,7 @@ footer {flex-shrink: 0;}
 	main {
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(3, auto);
 		grid-gap: 0 0;
 		gap: 0 0;
 		grid-auto-columns: 1fr;
@@ -439,17 +518,56 @@ footer {flex-shrink: 0;}
 		padding: 80px;
 	}
 
+	/*----HEADER NAVIGATION----*/
+
+	#top_nav {
+		height: 80px;
+		padding: 20px;
+	}
+
+	#logo img {
+		max-height: 100px;
+		max-width: 25%;
+	}
+
 	/*----HERO IMAGE----*/
 
 	header {
-		height: calc(100vh - 60px);
+		height: calc(100vh - 140px);
 		margin: 80px 0 0;
+	}
+
+	#header_container {
+		grid-template-columns: 1fr auto 120px auto 1fr;
+		grid-template-rows: 1fr auto 1fr;
+		height: calc(100vh - 150px); /* same as header minus 10px for the border */
+		top: 80px;
+	}
+
+	.header_link {
+		font-size: 3.06em;
+		padding: 40px 80px;
+	}
+
+	#header_container a:nth-of-type(1) {
+		grid-column-start: 2;
+		grid-column-end: 3;
+		grid-row-start: 2;
+		grid-row-end: 3;
+	}
+
+	#header_container a:nth-of-type(2) {
+		grid-column-start: 4;
+		grid-column-end: 5;
+		grid-row-start: 2;
+		grid-row-end: 3;
 	}
 
 	/*----FRONT PAGE----*/
 
 	.section {
 		margin: 0;
+		min-height: 300px;
 	}
 
 	.section:first-of-type {
@@ -467,30 +585,19 @@ footer {flex-shrink: 0;}
 	}
 
 	.section img {
-		height: calc(100% + 80px); /* full width plus the removed margin which is 40px ov every side */
-		margin: -40px;
-		object-fit: cover; /* crops either the height or width, so that the image won't look stretched but still fit in its .section*/
+		max-height: calc(100% + 80px); /* full width plus the removed margin which is 40px ov every side */
+		min-height: calc(100% + 80px); /* full width plus the removed margin which is 40px ov every side */
+		margin: -40px -40px -44px;
+		object-fit: cover; /* crops either the height or width, so that the image won't look stretched but still fit in its parent .section*/
 		width: calc(100% + 80px); /* full width plus the removed margin which is 40px ov every side */
 	}
 
-	.section:nth-of-type(3), .section:nth-of-type(7) {
-		display: block; /* show these sections (images) on the grid on desktop */
+	.mobile_hide {
+		display: block; /* show these sections (images) on the grid on desktop (while hidden on mobile) */
 	}
 
-	.section:nth-of-type(5) {
-		display: none; /* DO NOT show this section (image) on the grid on desktop */
-	}
-
-	/*----HEADER NAVIGATION----*/
-
-	#top_nav {
-		height: 80px;
-		padding: 20px;
-	}
-
-	#logo img {
-		max-height: 100px;
-		max-width: 25%;
+	.desktop_hide {
+		display: none; /* DO NOT show these sections (images) on the grid on desktop */
 	}
 
 }
