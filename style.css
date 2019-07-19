@@ -88,8 +88,6 @@ a {
 	transition: color 0.2s ease-in-out;
 }
 
-/*----404----*/
-
 /*----HEADER NAVIGATION----*/
 
 #top_nav {
@@ -262,6 +260,7 @@ a .section_link {
 
 }
 
+/*----404----*/
 
 /*----ALC ARCHIVE----*/
 
@@ -515,6 +514,14 @@ footer {flex-shrink: 0;}
 		margin: 0 auto;
 		max-width: 1700px;
 		padding: 80px;
+	}
+
+	/*----SINGLE PAGE----*/
+
+	#single_main {
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+		grid-template-rows: repeat(auto, auto);
 	}
 
 	/*----HEADER NAVIGATION----*/
