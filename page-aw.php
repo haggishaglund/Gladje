@@ -11,6 +11,11 @@
 
 	<div class="section">
 		<h5><?php the_title(); ?></h5>
+
+		<?php if(get_field('aw_day')) { ?>
+			<p class="sub_heading"><?php the_field('aw_day'); ?> &emsp; <?php the_field('aw_start'); ?> &ndash; <?php the_field('aw_close'); ?></p>
+		<?php } // end if(get_field(aw_day) ?>
+
 		<?php the_content(); ?>
 	</div>
 <?php } ?> <!-- end WHILE(HAVE_POSTS) -->

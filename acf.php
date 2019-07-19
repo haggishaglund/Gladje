@@ -1259,6 +1259,90 @@ acf_add_local_field_group(array(
 ));
 
 acf_add_local_field_group(array(
+	'key' => 'group_5d31a4002ae1a',
+	'title' => 'After work tid',
+	'fields' => array(
+		array(
+			'key' => 'field_5d31a4068e2cb',
+			'label' => 'Dag(ar)',
+			'name' => 'aw_day',
+			'type' => 'text',
+			'instructions' => 'Dag(ar) för After work.',
+			'required' => 0,
+			'conditional_logic' => 0,
+			'wrapper' => array(
+				'width' => '33.333',
+				'class' => '',
+				'id' => '',
+			),
+			'default_value' => 'Fredagar',
+			'placeholder' => 'Dag(ar)',
+			'prepend' => '',
+			'append' => '',
+			'maxlength' => 24,
+		),
+		array(
+			'key' => 'field_5d31a4738e2cc',
+			'label' => 'Starttid',
+			'name' => 'aw_start',
+			'type' => 'time_picker',
+			'instructions' => 'Ange tid After worken startar.',
+			'required' => 0,
+			'conditional_logic' => 0,
+			'wrapper' => array(
+				'width' => '33.333',
+				'class' => '',
+				'id' => '',
+			),
+			'display_format' => 'H:i',
+			'return_format' => 'H:i',
+		),
+		array(
+			'key' => 'field_5d31a4a48e2cd',
+			'label' => 'Sluttid',
+			'name' => 'aw_close',
+			'type' => 'time_picker',
+			'instructions' => 'Ange tid After worken stänger.',
+			'required' => 0,
+			'conditional_logic' => 0,
+			'wrapper' => array(
+				'width' => '33.333',
+				'class' => '',
+				'id' => '',
+			),
+			'display_format' => 'H:i',
+			'return_format' => 'H:i',
+		),
+	),
+	'location' => array(
+		array(
+			array(
+				'param' => 'page',
+				'operator' => '==',
+				'value' => '155',
+			),
+		),
+	),
+	'menu_order' => 9,
+	'position' => 'normal',
+	'style' => 'seamless',
+	'label_placement' => 'top',
+	'instruction_placement' => 'label',
+	'hide_on_screen' => array(
+		0 => 'excerpt',
+		1 => 'discussion',
+		2 => 'comments',
+		3 => 'revisions',
+		4 => 'author',
+		5 => 'categories',
+		6 => 'tags',
+		7 => 'send-trackbacks',
+	),
+	'active' => true,
+	'description' => 'På After work',
+));
+
+acf_add_local_field_group(array(
 	'key' => 'group_5d2db2054d265',
 	'title' => 'After work bild',
 	'fields' => array(

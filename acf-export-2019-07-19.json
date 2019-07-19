@@ -1253,6 +1253,89 @@
         "description": "På startsidan"
     },
     {
+        "key": "group_5d31a4002ae1a",
+        "title": "After work tid",
+        "fields": [
+            {
+                "key": "field_5d31a4068e2cb",
+                "label": "Dag(ar)",
+                "name": "aw_day",
+                "type": "text",
+                "instructions": "Dag(ar) för After work.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "33.333",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "Fredagar",
+                "placeholder": "Dag(ar)",
+                "prepend": "",
+                "append": "",
+                "maxlength": 24
+            },
+            {
+                "key": "field_5d31a4738e2cc",
+                "label": "Starttid",
+                "name": "aw_start",
+                "type": "time_picker",
+                "instructions": "Ange tid After worken startar.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "33.333",
+                    "class": "",
+                    "id": ""
+                },
+                "display_format": "H:i",
+                "return_format": "H:i"
+            },
+            {
+                "key": "field_5d31a4a48e2cd",
+                "label": "Sluttid",
+                "name": "aw_close",
+                "type": "time_picker",
+                "instructions": "Ange tid After worken stänger.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "33.333",
+                    "class": "",
+                    "id": ""
+                },
+                "display_format": "H:i",
+                "return_format": "H:i"
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "page",
+                    "operator": "==",
+                    "value": "155"
+                }
+            ]
+        ],
+        "menu_order": 9,
+        "position": "normal",
+        "style": "seamless",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": [
+            "excerpt",
+            "discussion",
+            "comments",
+            "revisions",
+            "author",
+            "categories",
+            "tags",
+            "send-trackbacks"
+        ],
+        "active": true,
+        "description": "På After work"
+    },
+    {
         "key": "group_5d2db2054d265",
         "title": "After work bild",
         "fields": [

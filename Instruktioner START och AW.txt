@@ -1,0 +1,36 @@
+INSTRUKTIONER FRONT-PAGE & AFTER WORK.
+Följ de här från början till slut.
+
+FUNCTIONS.PHP
+* Se till att Advanced Custom Fields-pluginen är installerad och uppdaterad.
+* Jag har inkluderat filen ACF.PHP i FUNCTIONS.PHP, men det är bättre om ni 
+laddar ner filen acf-export-2019-07-19.json som jag laddat upp i git-mappen 
+och importerar den. Gå in på "Egna fält" > "Verktyg", och under "Importera 
+fältgrupper" kan ni lägga in den.
+* När det är gjort ska det gå att ta bort raden get_template_part('acf'); 
+i FUNCTIONS.PHP och radera filen filen ACF.PHP. Obs att detta görs efter
+lyckad installation och importering.
+
+FRONT-PAGE.PHP
+* I headern finns det länkar till MENY och BOKA, jag har gjort url:en till 
+"/alacarte" och "/bokabord", men det beror ju på vad ni gör permalänkarna 
+till sen på hemsidan. De kan alltså behöva ändras manuellt av er i koden.
+* Skapa en sida som heter Startsida. Permalänken är oviktig. Du behöver inte 
+skriva någon annan text just nu.
+* Publicera sidan.
+* Gå in på "Inställningar" > "Läsa".
+* Under "Din startsida visar", välj "En statisk sida (välj nedan)".
+* På dropdown-menyn för "Startsida", välj "Startsida" (sidan du nyss skapade dvs).
+* Spara ändringar.
+* Gå tillbaka till "Sidor" och den sidan du nyss skapat, dvs "Startsida".
+* Redigera innehållet (dvs ställ in öppettider, ladda upp bilder, osv).
+* Spara och uppdatera. Startsidan ska nu vara klar.
+
+PAGE-AW.PHP
+* Skapa en ny sida med namn "After work".
+* Se till att permalänken är aw. INTE after-work eller något annat.
+* Eventuellt behöver sidan publiceras. I så fall, gör det, sen uppdatera sidan.
+* Fyll i alla fält med beskrivning, ladda upp bilder, priser, osv.
+* Spara och uppdatera. AW ska nu vara klar.
+
+THAT'S ALL FOLKS.
