@@ -105,20 +105,12 @@ a {
 }
 
 #top_nav ul {
-	display: none; /* TILLFÄLLIGT */
-	/* float: right;
-	list-style-type: none;
-	text-transform: uppercase;
-	margin: -90px 0 0; */
 }
 
 .sub_menu { /* drop down MENYER */
-	/*margin: 0 0 -90px; */
 }
 
 #top_nav li {
-	/* float: left;
-	padding: 0 0 0 30px; */
 }
 
 #top_nav li a {
