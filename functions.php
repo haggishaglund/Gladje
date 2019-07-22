@@ -1,6 +1,8 @@
 <?php
+//LEAVE THIS CODE, IN CASE OF FUCKUP
+//We might not need it thanks to ACF
 
-function create_post_type() {
+/*function create_post_type() {
   register_post_type( 'À La Carte',
     array(
       'labels' => array(
@@ -24,7 +26,7 @@ function alacarte_post_type() {
 		'supports' => array('title','thumbnail'),
 		'has_archive' => true,
 
-		'taxonomies' => array('veganskt','vegetariskt','fisk','nöt','kyckling','skaldjur','fläsk','lunch'),
+		'taxonomies' => array('veganskt','vegetariskt','fisk','nöt','kyckling','skaldjur','fläsk'),
 		'labels' => array(
 			'name'               => __( 'Maträtter',                    	'alacarte-textdomain' ),
 			'singular_name'      => __( 'Maträtt',                        	'alacarte-textdomain' ),
@@ -91,6 +93,10 @@ function create_mattype(){
 	register_taxonomy( 'mattyper', array('mat'), $args );
 }
 add_action( 'init', 'create_mattype' );
+*/
+
+//END OF FUCKUP PROOF CODE(???)
+
 
 //I think I need this for pablo, but i'm not sure yet....
 
@@ -142,7 +148,7 @@ add_action('init','pablo_post_type');
 
 function codex_custom_init() {
 
-	register_post_type( 'Lunchmeny',
+	/*register_post_type( 'Lunchmeny',
     array(
       'labels' => array(
         'name' => __( 'Lunchmeny' ),
@@ -152,9 +158,9 @@ function codex_custom_init() {
       'has_archive' => true,
       'rewrite' => array('slug' => 'lunch'),
     )
-  );
+  );*/
 
-	register_post_type( 'Matmeny',
+	/*register_post_type( 'Matmeny',
 		array(
 			'labels' => array(
 				'name' => __( 'Matmenu' ),
@@ -164,7 +170,7 @@ function codex_custom_init() {
 			'has_archive' => true,
 			'rewrite' => array('slug' => 'mat'),
 		)
-	);
+	);*/
 
  register_post_type('Pablo',
  	array(
