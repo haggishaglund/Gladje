@@ -1,24 +1,24 @@
-<?php get_header();?>
+<?php
+/*
+  Template Name: Dagens Lunch
+*/
+get_header();?>
 
 <header>
   	<?php the_post_thumbnail('hero_image'); ?>
-    <div id="header_container">
-  		<div class="header_link">Lunch</div>
-    </div>
 </header>
 
-<main>
+<main class="noGrid">
   <?php while( have_posts() ){ ?>
   	<?php the_post(); ?>
 
   <div class="section">
     <h5><?php the_title(); ?></h5>
-  </div>
 
 <?php } ?>
 
   	<div class="lunchmenu">
-      <?php if(get_field('lunch_title')) ?><h5><?php the_field('lunch_title') ?></div><?php }
+      <?php if(get_field('lunch_price')) ?><h6><?php the_field('lunch_price') ?> kr</h6><?php
   		  if(get_field('lunch1_title')) {
   			if(get_field('lunch1_title')) { ?><div class="item"><?php the_field('lunch1_title'); ?></div><?php }
   			if(get_field('lunch1_description')) { ?><div class="item_desc"><?php the_field('lunch1_description'); ?></div><?php }
@@ -49,5 +49,6 @@
         if(get_field('lunch6_description')) { ?><div class="item_desc"><?php the_field('lunch6_description'); ?></div><?php }
       } /* end if(get_field(lunchmenu6_title) */ ?>
     </div>
+  </div>
 </main>
 <?php get_footer(); ?>
