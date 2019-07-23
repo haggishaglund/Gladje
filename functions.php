@@ -1,22 +1,24 @@
 <?php
+//LEAVE THIS CODE, IN CASE OF FUCKUP
+//We might not need it thanks to ACF
 
-function create_post_type() {
-  register_post_type( 'Lunchmeny',
+/*function create_post_type() {
+  register_post_type( 'À La Carte',
     array(
       'labels' => array(
-        'name' => __( 'Lunchmeny' ),
+        'name' => __( 'À La Carte' ),
         'singular_name' => __( 'Måltid' )
       ),
       'public' => true,
       'has_archive' => true,
-      'rewrite' => array('slug' => 'lunch'),
+      'rewrite' => array('slug' => 'alacarte'),
     )
   );
 }
 
 add_action( 'init', 'create_post_type' );
 
-function lunch_post_type() {
+function alacarte_post_type() {
 	$args = array(
 		'public' => true,
 		'menu_icon' => 'dashicons-text-page',
@@ -24,30 +26,27 @@ function lunch_post_type() {
 		'supports' => array('title','thumbnail'),
 		'has_archive' => true,
 
-		'taxonomies' => array('veganskt','vegetariskt','fisk','nöt','kyckling','skaldjur','fläsk','lunch'),
+		'taxonomies' => array('veganskt','vegetariskt','fisk','nöt','kyckling','skaldjur','fläsk'),
 		'labels' => array(
-			'name'               => __( 'Mat',                        	'lunch-textdomain' ),
-			'singular_name'      => __( 'Mat',                        	'lunch-textdomain' ),
-			'menu_name'          => __( 'Mat',                        	'lunch-textdomain' ),
-			'name_admin_bar'     => __( 'Lägg till ny maträtt',       	'lunch-textdomain' ),
-			'add_new'            => __( 'Lägg till',                  	'lunch-textdomain' ),
-			'add_new_item'       => __( 'Lägg till ny maträtt',       	'lunch-textdomain' ),
-			'edit_item'          => __( 'Ändra maträtt',              	'lunch-textdomain' ),
-			'new_item'           => __( 'Ny maträtt',                 	'lunch-textdomain' ),
-			'view_item'          => __( 'Visa maträtt',               	'lunch-textdomain' ),
-			'search_items'       => __( 'Sök maträtt',                	'lunch-textdomain' ),
-			'not_found'          => __( 'Ingen maträtt hittad',       	'lunch-textdomain' ),
-			'not_found_in_trash' => __( 'Ingen maträtt i papperskorgen','lunch-textdomain' ),
-			'all_items'          => __( 'Visa ALLA maträtter',        	'lunch-textdomain' ),
+			'name'               => __( 'Maträtter',                    	'alacarte-textdomain' ),
+			'singular_name'      => __( 'Maträtt',                        	'alacarte-textdomain' ),
+			'menu_name'          => __( 'Maträtter',                        	'alacarte-textdomain' ),
+			'name_admin_bar'     => __( 'Lägg till ny maträtt',       	'alacarte-textdomain' ),
+			'add_new'            => __( 'Lägg till',                  	'alacarte-textdomain' ),
+			'add_new_item'       => __( 'Lägg till ny maträtt',       	'alacarte-textdomain' ),
+			'edit_item'          => __( 'Ändra maträtt',              	'alacarte-textdomain' ),
+			'new_item'           => __( 'Ny maträtt',                 	'alacarte-textdomain' ),
+			'view_item'          => __( 'Visa maträtt',               	'alacarte-textdomain' ),
+			'search_items'       => __( 'Sök maträtt',                	'alacarte-textdomain' ),
+			'not_found'          => __( 'Ingen maträtt hittad',       	'alacarte-textdomain' ),
+			'not_found_in_trash' => __( 'Ingen maträtt i papperskorgen','alacarte-textdomain' ),
+			'all_items'          => __( 'Visa ALLA maträtter',        	'alacarte-textdomain' ),
 	),
 );
-	register_post_type('lunch',$args);
+	register_post_type('alacarte',$args);
 }
 
-add_action( 'init', 'lunch_post_type' );
-
-
-
+add_action( 'init', 'alacarte_post_type' );
 
 function mat_post_type(){
 	$args = array(
@@ -94,6 +93,10 @@ function create_mattype(){
 	register_taxonomy( 'mattyper', array('mat'), $args );
 }
 add_action( 'init', 'create_mattype' );
+*/
+
+//END OF FUCKUP PROOF CODE(???)
+
 
 //I think I need this for pablo, but i'm not sure yet....
 
@@ -145,7 +148,7 @@ add_action('init','pablo_post_type');
 
 function codex_custom_init() {
 
-	register_post_type( 'Lunchmeny',
+	/*register_post_type( 'Lunchmeny',
     array(
       'labels' => array(
         'name' => __( 'Lunchmeny' ),
@@ -155,9 +158,9 @@ function codex_custom_init() {
       'has_archive' => true,
       'rewrite' => array('slug' => 'lunch'),
     )
-  );
+  );*/
 
-	register_post_type( 'Matmeny',
+	/*register_post_type( 'Matmeny',
 		array(
 			'labels' => array(
 				'name' => __( 'Matmenu' ),
@@ -167,7 +170,7 @@ function codex_custom_init() {
 			'has_archive' => true,
 			'rewrite' => array('slug' => 'mat'),
 		)
-	);
+	);*/
 
  register_post_type('Pablo',
  	array(

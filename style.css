@@ -260,20 +260,8 @@ a .section_link {
 
 /*----LUNCH----*/
 
-#lunch-wrapper { /* this could be .section probaby */
-		background: #FFF;
-		margin: 30px;
-		padding: 30px;
-}
+.lunchmenu{
 
-.matmenu-title { /* this can just be h5 */
-	color: #F010B3;
-	text-align: center;
-}
-
-#lunch-price { /* sub_heading probably */
-	text-align: center;
-	text-transform: none;
 }
 
 .lunch-item {
@@ -576,6 +564,9 @@ footer {flex-shrink: 0;}
 		margin: 0;
 		min-height: 300px;
 	}
+	.noGrid{
+		display:inline-block;
+	}
 
 	.section:first-of-type {
 		margin: 0;
@@ -606,5 +597,10 @@ footer {flex-shrink: 0;}
 	.desktop_hide {
 		display: none; /* DO NOT show these sections (images) on the grid on desktop */
 	}
+ .lunchmenu{
+	 margin: 0;
+	 max-width: 100%;
+	 min-width: 600px;
 
+ }
 }
