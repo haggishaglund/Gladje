@@ -338,6 +338,7 @@ a .section_link {
 
 .pablo_main {
 	background: #FFFEF8;
+	/*#FFFEF8;*/
 }
 
 #pablo_hero{
@@ -360,6 +361,14 @@ a .section_link {
 	background: #FFF;
 	margin: 30px 40px 60px;
 	padding: 40px;
+}
+
+.pablo_grid_image {
+	background: #FFF;
+	margin: 30px 40px 60px;
+	padding-left: 30px;
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
 
 

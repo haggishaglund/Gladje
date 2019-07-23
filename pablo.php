@@ -47,10 +47,11 @@ else {
 
     while ($query->have_posts()){
     $query->the_post();
-    echo"<h5 class='pablo_title1'>"; the_title();  echo"</h5>";
-    echo"<div class='section'>"; the_content(); echo"</div>";
+    echo"<div class='section'>";
+    echo"<h5 id='pablo_title1'>"; the_title();  echo"</h5>";
+    the_content(); echo"</div>";
     echo"<div class='pablo_grid_image'>"; the_post_thumbnail('grid_image'); echo"</div>";
-    
+
     //the_content();
     }
     }else{
