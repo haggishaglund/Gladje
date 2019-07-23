@@ -13,7 +13,7 @@ get_header();?>
   	<?php the_post(); ?>
 
   <div class="section">
-    <h5><?php the_title(); ?></h5>
+    <h5 class="pink"><?php the_title(); ?></h5>
 
 <?php } ?>
 
@@ -33,21 +33,6 @@ get_header();?>
         if(get_field('lunch3_title')) { ?><div class="item"><?php the_field('lunch3_title'); ?></div><?php }
         if(get_field('lunch3_description')) { ?><div class="item_desc"><?php the_field('lunch3_description'); ?></div><?php }
       } /* end if(get_field(lunchmenu3_title) */ ?>
-
-      <?php if(get_field('lunch4_title')) {
-        if(get_field('lunch4_title')) { ?><div class="item"><?php the_field('lunch4_title'); ?></div><?php }
-        if(get_field('lunch4_description')) { ?><div class="item_desc"><?php the_field('lunch4_description'); ?></div><?php }
-      } /* end if(get_field(lunchmenu4_title) */ ?>
-
-      <?php if(get_field('lunch5_title')) {
-        if(get_field('lunch5_title')) { ?><div class="item"><?php the_field('lunch5_title'); ?></div><?php }
-        if(get_field('lunch5_description')) { ?><div class="item_desc"><?php the_field('lunch5_description'); ?></div><?php }
-      } /* end if(get_field(lunchmenu5_title) */ ?>
-
-      <?php if(get_field('lunch6_title')) {
-        if(get_field('lunch6_title')) { ?><div class="item"><?php the_field('lunch6_title'); ?></div><?php }
-        if(get_field('lunch6_description')) { ?><div class="item_desc"><?php the_field('lunch6_description'); ?></div><?php }
-      } /* end if(get_field(lunchmenu6_title) */ ?>
     </div>
   </div>
 </main>
