@@ -15,14 +15,13 @@ else {
  <?php
  echo"<header>";
  the_post_thumbnail('hero_image');
-
- if( have_posts() ){
-   while( have_posts() ){
-       the_post();
       echo" <div class='pablo_hero_container'>";
          echo"<a href='/boka-bord'> <div class='pablo_hero_link'> BOKA BORD </div> </a>";
       echo"</div>";
 echo"</header>";
+
+    while( have_posts() ){
+        the_post();
 
    echo"<body class='pablo_main'>";
     /*$args = array(
@@ -33,19 +32,18 @@ echo"</header>";
       ?>
 
   <div class="pablo_section">
-    	<?php if(get_field('pablo')) {
-        if(get_field('pablo')) { ?><h5 class="pablo_title1"><?php the_field('pablo_title'); ?></h5><?php }
-        if(get_field('pablo')) { ?><div class="pablo_content"><?php the_field('pablo_text'); ?></div><?php }
+    	<?php if(get_field('pablo_title')) {
+        if(get_field('pablo_title')) { ?><h5 class="pablo_title1"><?php the_field('pablo_title'); ?></h5><?php }
+        if(get_field('pablo_text')) { ?><div class="pablo_content"><?php the_field('pablo_text'); ?></div><?php }
         if(get_field('pablo_bild')) { ?><div class="pablo_grid_image"><?php the_field('pablo_bild'); ?></div><?php }
         }
-        if(get_field('pablo')) {
-  			if(get_field('pablo')) { ?><h5 class="pablo_title1"><?php the_field('pablo_title'); ?></h5><?php }
-  			if(get_field('pablo')) { ?><div class="pablo_content"><?php the_field('pablo_text'); ?></div><?php }
+        if(get_field('pablo_title')) {
+  			if(get_field('pablo_title')) { ?><h5 class="pablo_title1"><?php the_field('pablo_title'); ?></h5><?php }
+  			if(get_field('pablo_text')) { ?><div class="pablo_content"><?php the_field('pablo_text'); ?></div><?php }
         if(get_field('pablo_bild')) { ?><div class="pablo_grid_image"><?php the_field('pablo_bild'); ?></div><?php }
       }
       echo"</div>";
       }
-    }
 /*
     $query = new wp_query($args);
     if ($query->have_posts() ){
