@@ -373,8 +373,18 @@ a .section_link {
 
 /*----PABLO----*/
 
+/*----COLORS PABLO----
+RED	(for titles)		#FC3F1D
+YELLOW (for titles)	#F7D100
+ORANGE (for titles)	#FF9000
+GREEN (for titles)	#1B9937
+WHITE (sections)		#FFF
+BLACK	(texts)				#0A1010
+*/
+
 .pablo_main {
-	background: #FFFEF8;
+	background: #fff4e3;
+	/*#FFFEF8;*/
 }
 
 #pablo_hero{
@@ -395,20 +405,32 @@ a .section_link {
 
 .pablo_section {
 	background: #FFF;
-	margin: 30px 40px 60px;
+	margin: 30px 40px 30px;
 	padding: 40px;
 }
 
-
-#pablo_title1 {
-	color: #FC3F1D;
+.pablo_grid_image {
+	background: #FFF;
+	padding-left: 30px;
+	padding-right: -30px;
+	padding-top: 20px;
+	margin: 30px -40px;
 }
 
-#pablo_title2 {
+.pablo_title1:first-of-type {
 	color: #1B9937;
 }
 
+.pablo_title1:nth-of-type(2) {
+	color: #1B9937;
+}
+
+.pablo_content{
+	text-align: center;
+}
+
 .pablo_content p{
+	color: #0A1010;
 }
 
 .pablo_hero_link {
@@ -424,18 +446,59 @@ a .section_link {
 	padding: 20px 40px;
 }
 
+.pablo_hero_link:hover{
+	background: rgba(255,144,0, 0.5);
+
+}
+
 /*.wp-block-image{
 	width:360px;
 	height: 279px;
 } */
+/*----PABLO HEADER----*/
+
+#pablo_top_nav {
+	background: #FFF;
+	height: 80px;
+	padding: 10px;
+	position: fixed;
+	width: 100%;
+	z-index: 999; /* always on top */
+	box-shadow: 5px 5px 5px grey;
+
+}
+
+#logo img {
+	max-height: 80px;
+	max-width: 50%;
+}
+
+#pablo_top_nav ul {
+}
+
+.sub_menu { /* drop down MENYER */
+}
+
+#pablo_top_nav li {
+}
+
+#pablo_top_nav li a {
+	color: #0A1010;
+	font-weight: 900;
+}
+
+#pablo_top_nav li a:hover {
+}
+
+.pablo_menu{
+	float:right;
+	display: inline-block;
+	list-style: none;
+
+}
+
 
 /*----PABLO FOOTER----*/
-
-footer {
-	background: rgba(255,144,0); /* color #14E7D6, but adds opacity to the background ONLY (not the content) */
-	color: #FFF;
-	padding: 0 40px 40px;
-}
 
 #pablo_footer{
 	margin-top: 10px;
@@ -455,11 +518,7 @@ footer h6 {
 	padding: 30px 0 10px;
 }
 
-.pablo_footer_section ul {
-	list-style-type: none;
-}
-
-.pablo_footer_section li:before {
+.pablo_footer_section {
 	padding: 0 10px 0 0;
 }
 
@@ -522,8 +581,6 @@ html, body {height: 100%;}
 body {display: flex; flex-direction: column;}
 #footer_space {flex: 1 0 auto;}
 footer {flex-shrink: 0;}
-
-
 
 
 
@@ -649,4 +706,51 @@ footer {flex-shrink: 0;}
 	 min-width: 600px;
 
  }
+/*----PABLO----*/
+
+.pablo_hero_container{
+	height: calc(100vh - 140px);
+	margin: 80px 0 0;
+	height: calc(100vh - 150px); /* same as header minus 10px for the border*/
+	top: 80px;
+}
+
+.pablo_main {
+
+}
+
+
+.pablo_section{
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(3, auto);
+	grid-gap: 0 0;
+	gap: 0 0;
+	grid-auto-columns: 1fr;
+	grid-auto-rows: 1fr;
+	margin: 0 auto;
+	max-width: 1700px;
+	min-height: 300px;
+	padding: 80px;
+
+}
+
+.pablo_title1{
+	padding-bottom: 20px;
+}
+
+.pablo_content{
+	padding-left: 20px;
+	padding-right: 20px;
+	text-align: left;
+
+}
+
+.pablo_grid_image{
+	max-height: calc(100% + 80px); /* full width plus the removed margin which is 40px ov every side */
+	min-height: calc(100% + 80px); /* full width plus the removed margin which is 40px ov every side */
+	object-fit: cover; /* crops either the height or width, so that the image won't look stretched but still fit in its parent .section*/
+	width: calc(100% + 80px); /* full width plus the removed margin which is 40px ov every side */
+
+}
+
 }

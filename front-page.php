@@ -4,7 +4,7 @@
 	<?php the_post_thumbnail('hero_image'); ?>
 	<div id="header_container">
 		<a href="/alacarte"><div class="header_link">Meny</div></a>
-		<a href="/bokabord"><div class="header_link">Boka</div></a>
+		<a href="/boka-bord"><div class="header_link">Boka</div></a>
 	</div>
 </header>
 

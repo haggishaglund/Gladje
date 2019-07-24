@@ -12,7 +12,7 @@
 
 <body>
 
-<nav id="top_nav">
+<nav id="pablo_top_nav">
 
 	<a href="<?php bloginfo('url'); ?>">
 		<?php $custom_logo_id = get_theme_mod( 'custom_logo' ); ?>
@@ -20,5 +20,5 @@
 		<div id="logo"><img src="<?php echo $image[0]; ?>" alt=""></div>
 	</a>
 
-	<?php wp_nav_menu('pablo_menu');?>
+	<div class="pablo_menu"> <?php wp_nav_menu('pablo_menu');?> </div>
 </nav>

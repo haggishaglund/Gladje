@@ -5,8 +5,8 @@
 	<div class="pablo_footer_section">
 		<h6 class="pablo_footer_head">Kontakt</h6>
 		<ul>
-			<li><a href="tel:036712160">036 – 71 21 60</a></li>
-			<li><a href="mail:info@gladjejonkoping.se" target="_top">info@gladjejonkoping.se</a></li>
+			<li class="li_pablo"><a href="tel:036712160">036 – 71 21 60</a></li>
+			<li class="li_pablo"><a href="mail:info@gladjejonkoping.se" target="_top">info@gladjejonkoping.se</a></li>
 		</ul>
 	</div>
 
@@ -18,11 +18,12 @@
 	</div>
 
 	<div class="pablo_footer_section">
-		<h6 class="pablo_footer_head">Öppettider</h6>
-    <ul>
-    <li>Ons &ndash; lör  17 &ndash; 00</li>
-    <li>Sön &ndash; tis  Stängt</li>
-  </ul>
+			<h6 class="pablo_footer_head">Öppettider</h6>
+  	<ul>
+    	<li class="li_pablo">Ons &ndash; lör &emsp; 17 &ndash; 00</li>
+    	<li class="li_pablo">Sön &ndash; tis &emsp; Stängt</li>
+  	</ul>
+	</div>
 
 
 </footer>
