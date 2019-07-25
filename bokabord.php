@@ -3,15 +3,12 @@
   Template Name: Boka bord
 */
 get_header();
-
-echo"<main>";
-
   echo"<header>"; the_post_thumbnail('hero_image'); echo"</header>";
+  echo"<body>";
   echo"<div class='boka-section'>";
   echo"<h5>"; the_title(); echo"</h5>";
-  //echo"<div class='front_content'>"; the_content(); echo"</div>";
-  //todiloo important stuff for the website will end up here...
   echo"</div>";
+
 
   foreach ($_POST as $query)
   {
@@ -46,7 +43,7 @@ echo"<main>";
     echo $result;
   }
 
-echo"</main>";
+echo"</body>";
 
 ?>
 <?php get_footer(); ?>
