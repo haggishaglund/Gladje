@@ -1,9 +1,12 @@
-<?php get_header(); ?>
+<?php
+/*
+Template: 404
+*/
+get_header(); ?>
 
-    <div class="404">
-      <h2>Hoppsan!</h2>
-      <h3>Den här sidan finns inte...</h3>
-      <p href="/front-page">Till Startsidan</p>
+    <div id="notfound">
+      <h4>Den här sidan finns inte...</h4>
+      <h5><a href=" ">Till Startsidan</a></h5>
     </div>
 
 <?php get_footer(); ?>

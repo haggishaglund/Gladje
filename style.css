@@ -253,8 +253,15 @@ a .section_link {
 }
 
 /*----404----*/
-
-/*----ALC ARCHIVE----*/
+#notfound {
+	background-color: #FFF;
+	color: #FF9000;
+	padding: 7em 0;
+}
+#notfound h5{
+	padding-top: 2em;
+	text-decoration: none;
+}
 
 /*----A LA CARTE----*/
 
@@ -626,7 +633,7 @@ footer {flex-shrink: 0;}
 	#alc_container{
 		flex-direction: row;
 		flex-wrap: wrap;
-		margin: 155px auto;
+		margin: 100px auto 0;
 		padding: 2em;
 	}
 	.alc_link {
