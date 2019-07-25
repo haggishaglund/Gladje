@@ -5,12 +5,12 @@
 get_header();?>
 
 <header>
-  	<?php the_post_thumbnail('hero_image'); ?>
+    <img class="alc_thumbnail" src="<?php the_post_thumbnail('hero_image'); ?>">
     <div id="alc_container">
-  		<div class="alc_link">Förrätt</div>
-  		<div class="alc_link">Varmrätt</div>
-  		<div class="alc_link">Dessert</div>
-  		<div class="alc_link">Middagspaket</div>
+        <div class="alc_link"><a href="#forratt">Förrätt</a></div>
+        <div class="alc_link"><a href="#varmratt">Varmrätt</a></div>
+  		  <div class="alc_link"><a href="#dessert">Dessert</a></div>
+  		  <div class="alc_link"><a href="#middagspaket">Middagspaket</a></div>
   	</div>
 </header>
 
