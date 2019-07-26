@@ -421,37 +421,13 @@ BLACK	(texts)				#0A1010
 
 .pablo_grid_image img {
 	background: #FFF;
-	padding-left: 10px;
-	padding-right: -30px;
 	padding-top: 20px;
-	margin: 30px -15px 30px;
-	width:360px;
-	height:279px;
-	object-fit: cover;
-
+	margin: 10px -55px 10px;
 }
-
-.pablo_grid_image2 img {
-	background: #FFF;
-	padding-left: 10px;
-	padding-right: -30px;
-	padding-top: 20px;
-	margin: 30px -15px 30px;
-	width:360px;
-	height:279px;
-	object-fit: cover;
-
-}
-
 
 .pablo_title1	{
-	padding-bottom: 20px;
+	padding-bottom: 10px;
 	color: #FC3F1D;
-}
-
-.pablo_title2	{
-	padding-bottom: 20px;
-	color: #1B9937;
 }
 
 .pablo_content{
@@ -760,6 +736,9 @@ footer {flex-shrink: 0;}
 
 
 .pablo_section{
+/*	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;*/
 
 }
 
@@ -768,50 +747,39 @@ footer {flex-shrink: 0;}
 	float:left;
 }
 
-.pablo_title2{
-	margin-right: 120px;
-	float:right;
-}
-
-
 .pablo_content{
-	margin-right: 500px;
 	padding-top: 60px;
-	padding-left: 20px;
-	padding-right: 20px;
-	text-align: left;
-
 }
 
-.pablo_content2{
-	margin-right:-200px;
-	padding-top: 60px;
-	padding-left: 40px;
-	float:right;
-
+#pablo_text_section{
+	margin-top: 70px;
+	float:left;
+	width:420px;
 }
 
 .pablo_grid_image img {
-	margin-top: -150px;
-	margin-left: 460px;
+	float:right;
 	width:510px;
 	height:370px;
 	object-fit: cover;
 
 }
 
-.pablo_grid_image2 img {
-	margin-top: -132px;
-	margin-right: 430px;
-	margin-left: -100px;
-	width:510px;
-	height:370px;
-	object-fit: cover;
+/*----Pablo footer---*/
 
+.pablo_footer_head{
+	text-align: left;
+}
+
+.pablo_footer_section { /* we need these for the grid in the footer */
+	text-align: left;
 }
 
 /*----Boka bord----*/
 
+.boka_main{
+	padding:80px;
+}
 
 
 }

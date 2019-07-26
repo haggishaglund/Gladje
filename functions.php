@@ -116,7 +116,7 @@ add_action( 'init', 'create_mattype' );
 }*/
 
 //add_action('init', 'pablo_post_type');
-/*function pablo_post_type() {
+  function pablo_post_type() {
     $args = array(
           'public' => true,
           'menu_icon' => 'dashicons-portfolio',
@@ -172,7 +172,7 @@ function codex_custom_init() {
 		)
 	);*/
 
- /*register_post_type('Pablo',
+ register_post_type('Pablo',
  	array(
  		'labels' => array(
  		'name' => __('Pablo'),
@@ -185,7 +185,7 @@ function codex_custom_init() {
  );
 }
 add_action( 'init', 'codex_custom_init' );
-*/
+
 /////end of taxonomies/////
 
 function register_my_menus() {
