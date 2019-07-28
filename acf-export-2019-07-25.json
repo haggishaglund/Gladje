@@ -1,0 +1,1826 @@
+[
+    {
+        "key": "group_5d36ffc125ddf",
+        "title": "ALC: Desserter",
+        "fields": [
+            {
+                "key": "field_5d36ffc1364d2",
+                "label": "Dessert 1 Namn",
+                "name": "dessert1_title",
+                "type": "text",
+                "instructions": "Skriv rättens namn",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "item",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5d36ffc1366d7",
+                "label": "Dessert 1 Pris",
+                "name": "dessert1_price",
+                "type": "number",
+                "instructions": "",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "item_price",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "kr",
+                "min": "",
+                "max": "",
+                "step": ""
+            },
+            {
+                "key": "field_5d36ffc1368b3",
+                "label": "Dessert 1 Beskrivning",
+                "name": "dessert1_desc",
+                "type": "textarea",
+                "instructions": "Beskriv maträtten",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "item_desc",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "maxlength": "",
+                "rows": 3,
+                "new_lines": "br"
+            },
+            {
+                "key": "field_5d36ffc136a96",
+                "label": "Dessert 2 Namn",
+                "name": "dessert2_title",
+                "type": "text",
+                "instructions": "Skriv rättens namn",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "item",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5d36ffc136cb1",
+                "label": "Dessert 2 Pris",
+                "name": "dessert2_price",
+                "type": "number",
+                "instructions": "",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "item_price",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "kr",
+                "min": "",
+                "max": "",
+                "step": ""
+            },
+            {
+                "key": "field_5d36ffc136ed0",
+                "label": "Dessert 2 Beskrivning",
+                "name": "dessert2_desc",
+                "type": "textarea",
+                "instructions": "Beskriv maträtten",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "item_desc",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "maxlength": "",
+                "rows": 3,
+                "new_lines": "br"
+            },
+            {
+                "key": "field_5d36ffc137119",
+                "label": "Dessert 3 Namn",
+                "name": "dessert3_title",
+                "type": "text",
+                "instructions": "Skriv rättens namn",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "item",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5d36ffc13732a",
+                "label": "Dessert 3 Pris",
+                "name": "dessert3_price",
+                "type": "number",
+                "instructions": "",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "item_price",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "kr",
+                "min": "",
+                "max": "",
+                "step": ""
+            },
+            {
+                "key": "field_5d36ffc137548",
+                "label": "Dessert 3 Beskrivning",
+                "name": "dessert3_desc",
+                "type": "textarea",
+                "instructions": "Beskriv maträtten",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "item_desc",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "maxlength": "",
+                "rows": 3,
+                "new_lines": "br"
+            },
+            {
+                "key": "field_5d36ffc137852",
+                "label": "Dessert 4 Namn",
+                "name": "dessert4_title",
+                "type": "text",
+                "instructions": "Skriv rättens namn",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "item",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5d36ffc137cb5",
+                "label": "Dessert 4 Pris",
+                "name": "dessert4_price",
+                "type": "number",
+                "instructions": "",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "item_price",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "kr",
+                "min": "",
+                "max": "",
+                "step": ""
+            },
+            {
+                "key": "field_5d36ffc1380f8",
+                "label": "Dessert 4 Beskrivning",
+                "name": "dessert4_desc",
+                "type": "textarea",
+                "instructions": "Beskriv maträtten",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "item_desc",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "maxlength": "",
+                "rows": 3,
+                "new_lines": "br"
+            },
+            {
+                "key": "field_5d36ffc13847e",
+                "label": "Dessert 5 Namn",
+                "name": "forratt5_title",
+                "type": "text",
+                "instructions": "Skriv rättens namn",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "item",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5d36ffc1387be",
+                "label": "Dessert 5 Pris",
+                "name": "dessert5_price",
+                "type": "number",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "item_price",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "kr",
+                "min": "",
+                "max": "",
+                "step": ""
+            },
+            {
+                "key": "field_5d36ffc138a4a",
+                "label": "Dessert 5 Beskrivning",
+                "name": "dessert5_desc",
+                "type": "textarea",
+                "instructions": "Beskriv maträtten",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "item_desc",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "maxlength": "",
+                "rows": 3,
+                "new_lines": "br"
+            },
+            {
+                "key": "field_5d36ffc138d7e",
+                "label": "Dessert 6 Namn",
+                "name": "dessert6_title",
+                "type": "text",
+                "instructions": "Skriv rättens namn",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "item",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5d36ffc1390ad",
+                "label": "Dessert 6 Pris",
+                "name": "dessert6_price",
+                "type": "number",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "item_price",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "kr",
+                "min": "",
+                "max": "",
+                "step": ""
+            },
+            {
+                "key": "field_5d36ffc13939f",
+                "label": "Dessert 6 Beskrivning",
+                "name": "dessert6_desc",
+                "type": "textarea",
+                "instructions": "Beskriv maträtten",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "item_desc",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "maxlength": "",
+                "rows": 3,
+                "new_lines": "br"
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "page",
+                    "operator": "==",
+                    "value": "71"
+                }
+            ],
+            [
+                {
+                    "param": "page_template",
+                    "operator": "==",
+                    "value": "alacarte.php"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": "À la Carte Dessertmeny"
+    },
+    {
+        "key": "group_5d3587aee9922",
+        "title": "ALC: Förrätter",
+        "fields": [
+            {
+                "key": "field_5d3587e4ac8a3",
+                "label": "Förrätt 1 Namn",
+                "name": "forratt1_title",
+                "type": "text",
+                "instructions": "Skriv rättens namn",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "item",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5d35895bac8a5",
+                "label": "Förrätt 1 Pris",
+                "name": "forratt1_price",
+                "type": "number",
+                "instructions": "",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "item_price",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "kr",
+                "min": "",
+                "max": "",
+                "step": ""
+            },
+            {
+                "key": "field_5d3588fdac8a4",
+                "label": "Förrätt 1 Beskrivning",
+                "name": "forratt1_desc",
+                "type": "textarea",
+                "instructions": "Beskriv maträtten",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "item_desc",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "maxlength": "",
+                "rows": 3,
+                "new_lines": "br"
+            },
+            {
+                "key": "field_5d358cc99810b",
+                "label": "Förrätt 2 Namn",
+                "name": "forratt2_title",
+                "type": "text",
+                "instructions": "Skriv rättens namn",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "item",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5d358e379810d",
+                "label": "Förrätt 2 Pris",
+                "name": "forratt2_price",
+                "type": "number",
+                "instructions": "",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "item_price",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "kr",
+                "min": "",
+                "max": "",
+                "step": ""
+            },
+            {
+                "key": "field_5d358e7a9810f",
+                "label": "Förrätt 2 Beskrivning",
+                "name": "forratt2_desc",
+                "type": "textarea",
+                "instructions": "Beskriv maträtten",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "item_desc",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "maxlength": "",
+                "rows": 3,
+                "new_lines": "br"
+            },
+            {
+                "key": "field_5d358db89810c",
+                "label": "Förrätt 3 Namn",
+                "name": "forratt3_title",
+                "type": "text",
+                "instructions": "Skriv rättens namn",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "item",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5d358e5e9810e",
+                "label": "Förrätt 3 Pris",
+                "name": "forratt3_price",
+                "type": "number",
+                "instructions": "",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "item_price",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "kr",
+                "min": "",
+                "max": "",
+                "step": ""
+            },
+            {
+                "key": "field_5d358eb298110",
+                "label": "Förrätt 3 Beskrivning",
+                "name": "forratt3_desc",
+                "type": "textarea",
+                "instructions": "Beskriv maträtten",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "item_desc",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "maxlength": "",
+                "rows": 3,
+                "new_lines": "br"
+            },
+            {
+                "key": "field_5d36fe331f6bd",
+                "label": "Förrätt 4 Namn",
+                "name": "forratt4_title",
+                "type": "text",
+                "instructions": "Skriv rättens namn",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "item",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5d36fe961f6be",
+                "label": "Förrätt 4 Pris",
+                "name": "forratt4_price",
+                "type": "number",
+                "instructions": "",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "item_price",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "kr",
+                "min": "",
+                "max": "",
+                "step": ""
+            },
+            {
+                "key": "field_5d36fef31f6c1",
+                "label": "Förrätt 4 Beskrivning",
+                "name": "forratt4_desc",
+                "type": "textarea",
+                "instructions": "Beskriv maträtten",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "item_desc",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "maxlength": "",
+                "rows": 3,
+                "new_lines": "br"
+            },
+            {
+                "key": "field_5d36fe2f1f6bc",
+                "label": "Förrätt 5 Namn",
+                "name": "forratt5_title",
+                "type": "text",
+                "instructions": "Skriv rättens namn",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "item",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5d36feac1f6bf",
+                "label": "Förrätt 5 Pris",
+                "name": "forratt5_price",
+                "type": "number",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "item_price",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "kr",
+                "min": "",
+                "max": "",
+                "step": ""
+            },
+            {
+                "key": "field_5d36ff181f6c2",
+                "label": "Förrätt 5 Beskrivning",
+                "name": "forratt5_desc",
+                "type": "textarea",
+                "instructions": "Beskriv maträtten",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "item_desc",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "maxlength": "",
+                "rows": 3,
+                "new_lines": "br"
+            },
+            {
+                "key": "field_5d36fe2d1f6bb",
+                "label": "Förrätt 6 Namn",
+                "name": "forratt6_title",
+                "type": "text",
+                "instructions": "Skriv rättens namn",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "item",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5d36fed61f6c0",
+                "label": "Förrätt 6 Pris",
+                "name": "forratt6_price",
+                "type": "number",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "item_price",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "kr",
+                "min": "",
+                "max": "",
+                "step": ""
+            },
+            {
+                "key": "field_5d36ff3f1f6c3",
+                "label": "Förrätt 6 Beskrivning",
+                "name": "forratt6_desc",
+                "type": "textarea",
+                "instructions": "Beskriv maträtten",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "item_desc",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "maxlength": "",
+                "rows": 3,
+                "new_lines": "br"
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "page",
+                    "operator": "==",
+                    "value": "71"
+                }
+            ],
+            [
+                {
+                    "param": "page_template",
+                    "operator": "==",
+                    "value": "alacarte.php"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": "À la Carte Förrättsmeny"
+    },
+    {
+        "key": "group_5d37078fd8e7e",
+        "title": "ALC: Middagspaket",
+        "fields": [
+            {
+                "key": "field_5d3707900aaae",
+                "label": "Middagspaket 1 Namn",
+                "name": "paket1_title",
+                "type": "text",
+                "instructions": "Skriv rättens namn",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "item",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5d3707900b764",
+                "label": "Middagspaket 1 Pris",
+                "name": "paket1_price",
+                "type": "number",
+                "instructions": "",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "item_price",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "kr",
+                "min": "",
+                "max": "",
+                "step": ""
+            },
+            {
+                "key": "field_5d3707900bbb5",
+                "label": "Middagspaket 1 Beskrivning",
+                "name": "paket1_desc",
+                "type": "textarea",
+                "instructions": "Beskriv maträtten",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "item_desc",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "maxlength": "",
+                "rows": 3,
+                "new_lines": "br"
+            },
+            {
+                "key": "field_5d3707900c424",
+                "label": "Middagspaket 2 Namn",
+                "name": "paket2_title",
+                "type": "text",
+                "instructions": "Skriv rättens namn",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "item",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5d3707900d652",
+                "label": "Middagspaket 2 Pris",
+                "name": "paket2_price",
+                "type": "number",
+                "instructions": "",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "item_price",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "kr",
+                "min": "",
+                "max": "",
+                "step": ""
+            },
+            {
+                "key": "field_5d3707900de2f",
+                "label": "Middagspaket 2 Beskrivning",
+                "name": "paket2_desc",
+                "type": "textarea",
+                "instructions": "Beskriv maträtten",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "item_desc",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "maxlength": "",
+                "rows": 3,
+                "new_lines": "br"
+            },
+            {
+                "key": "field_5d3707900e64b",
+                "label": "Middagspaket 3 Namn",
+                "name": "paket3_title",
+                "type": "text",
+                "instructions": "Skriv rättens namn",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "item",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5d3707900f271",
+                "label": "Middagspaket 3 Pris",
+                "name": "paket3_price",
+                "type": "number",
+                "instructions": "",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "item_price",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "kr",
+                "min": "",
+                "max": "",
+                "step": ""
+            },
+            {
+                "key": "field_5d3707900fa1a",
+                "label": "Middagspaket 3 Beskrivning",
+                "name": "paket3_desc",
+                "type": "textarea",
+                "instructions": "Beskriv maträtten",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "item_desc",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "maxlength": "",
+                "rows": 3,
+                "new_lines": "br"
+            },
+            {
+                "key": "field_5d37079010d4c",
+                "label": "Middagspaket 4 Namn",
+                "name": "paket4_title",
+                "type": "text",
+                "instructions": "Skriv rättens namn",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "item",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5d37079011767",
+                "label": "Middagspaket 4 Pris",
+                "name": "paket4_price",
+                "type": "number",
+                "instructions": "",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "item_price",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "kr",
+                "min": "",
+                "max": "",
+                "step": ""
+            },
+            {
+                "key": "field_5d37079011d93",
+                "label": "Middagspaket 4 Beskrivning",
+                "name": "paket4_desc",
+                "type": "textarea",
+                "instructions": "Beskriv maträtten",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "item_desc",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "maxlength": "",
+                "rows": 3,
+                "new_lines": "br"
+            },
+            {
+                "key": "field_5d370790123a5",
+                "label": "Middagspaket 5 Namn",
+                "name": "paket5_title",
+                "type": "text",
+                "instructions": "Skriv rättens namn",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "item",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5d3707901298a",
+                "label": "Middagspaket 5 Pris",
+                "name": "paket5_price",
+                "type": "number",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "item_price",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "kr",
+                "min": "",
+                "max": "",
+                "step": ""
+            },
+            {
+                "key": "field_5d37079012ec5",
+                "label": "Middagspaket 5 Beskrivning",
+                "name": "paket5_desc",
+                "type": "textarea",
+                "instructions": "Beskriv maträtten",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "item_desc",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "maxlength": "",
+                "rows": 3,
+                "new_lines": "br"
+            },
+            {
+                "key": "field_5d37079013d62",
+                "label": "Middagspaket 6 Namn",
+                "name": "paket6_title",
+                "type": "text",
+                "instructions": "Skriv rättens namn",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "item",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5d37079015211",
+                "label": "Middagspaket 6 Pris",
+                "name": "paket6_price",
+                "type": "number",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "item_price",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "kr",
+                "min": "",
+                "max": "",
+                "step": ""
+            },
+            {
+                "key": "field_5d37079016276",
+                "label": "Middagspaket 6 Beskrivning",
+                "name": "paket6_desc",
+                "type": "textarea",
+                "instructions": "Beskriv maträtten",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "item_desc",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "maxlength": "",
+                "rows": 3,
+                "new_lines": "br"
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "page",
+                    "operator": "==",
+                    "value": "71"
+                }
+            ],
+            [
+                {
+                    "param": "page_template",
+                    "operator": "==",
+                    "value": "alacarte.php"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": "À la Carte Middagspaket"
+    },
+    {
+        "key": "group_5d37047290212",
+        "title": "ALC: Varmrätter",
+        "fields": [
+            {
+                "key": "field_5d370472a63b0",
+                "label": "Varmrätt 1 Namn",
+                "name": "varmratt1_title",
+                "type": "text",
+                "instructions": "Skriv rättens namn",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "item",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5d370472a6755",
+                "label": "Varmrätt 1 Pris",
+                "name": "varmratt1_price",
+                "type": "number",
+                "instructions": "",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "item_price",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "kr",
+                "min": "",
+                "max": "",
+                "step": ""
+            },
+            {
+                "key": "field_5d370472a6ae3",
+                "label": "Varmrätt 1 Beskrivning",
+                "name": "varmratt1_desc",
+                "type": "textarea",
+                "instructions": "Beskriv maträtten",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "item_desc",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "maxlength": "",
+                "rows": 3,
+                "new_lines": "br"
+            },
+            {
+                "key": "field_5d370472a6e5b",
+                "label": "Varmrätt 2 Namn",
+                "name": "varmratt2_title",
+                "type": "text",
+                "instructions": "Skriv rättens namn",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "item",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5d370472a7152",
+                "label": "Varmrätt 2 Pris",
+                "name": "varmratt2_price",
+                "type": "number",
+                "instructions": "",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "item_price",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "kr",
+                "min": "",
+                "max": "",
+                "step": ""
+            },
+            {
+                "key": "field_5d370472a74e0",
+                "label": "Varmrätt 2 Beskrivning",
+                "name": "varmratt2_desc",
+                "type": "textarea",
+                "instructions": "Beskriv maträtten",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "item_desc",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "maxlength": "",
+                "rows": 3,
+                "new_lines": "br"
+            },
+            {
+                "key": "field_5d370472a7955",
+                "label": "Varmrätt 3 Namn",
+                "name": "varmratt3_title",
+                "type": "text",
+                "instructions": "Skriv rättens namn",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "item",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5d370472a7ce0",
+                "label": "Varmrätt 3 Pris",
+                "name": "varmratt3_price",
+                "type": "number",
+                "instructions": "",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "item_price",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "kr",
+                "min": "",
+                "max": "",
+                "step": ""
+            },
+            {
+                "key": "field_5d370472a806c",
+                "label": "Varmrätt 3 Beskrivning",
+                "name": "varmratt3_desc",
+                "type": "textarea",
+                "instructions": "Beskriv maträtten",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "item_desc",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "maxlength": "",
+                "rows": 3,
+                "new_lines": "br"
+            },
+            {
+                "key": "field_5d370472a84e0",
+                "label": "Varmrätt 4 Namn",
+                "name": "varmratt4_title",
+                "type": "text",
+                "instructions": "Skriv rättens namn",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "item",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5d370472a88ca",
+                "label": "Varmrätt 4 Pris",
+                "name": "varmratt4_price",
+                "type": "number",
+                "instructions": "",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "item_price",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "kr",
+                "min": "",
+                "max": "",
+                "step": ""
+            },
+            {
+                "key": "field_5d370472a8cb8",
+                "label": "Varmrätt 4 Beskrivning",
+                "name": "varmratt4_desc",
+                "type": "textarea",
+                "instructions": "Beskriv maträtten",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "item_desc",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "maxlength": "",
+                "rows": 3,
+                "new_lines": "br"
+            },
+            {
+                "key": "field_5d370472a90a3",
+                "label": "Varmrätt 5 Namn",
+                "name": "varmratt5_title",
+                "type": "text",
+                "instructions": "Skriv rättens namn",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "item",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5d370472a95ea",
+                "label": "Varmrätt 5 Pris",
+                "name": "varmratt5_price",
+                "type": "number",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "item_price",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "kr",
+                "min": "",
+                "max": "",
+                "step": ""
+            },
+            {
+                "key": "field_5d370472a9954",
+                "label": "Varmrätt 5 Beskrivning",
+                "name": "varmratt5_desc",
+                "type": "textarea",
+                "instructions": "Beskriv maträtten",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "item_desc",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "maxlength": "",
+                "rows": 3,
+                "new_lines": "br"
+            },
+            {
+                "key": "field_5d370472a9d79",
+                "label": "Varmrätt 6 Namn",
+                "name": "varmratt6_title",
+                "type": "text",
+                "instructions": "Skriv rättens namn",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "item",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5d370472aa22e",
+                "label": "Varmrätt 6 Pris",
+                "name": "varmratt6_price",
+                "type": "number",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "item_price",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "kr",
+                "min": "",
+                "max": "",
+                "step": ""
+            },
+            {
+                "key": "field_5d3706f0452e7",
+                "label": "Varmrätt 6 Beskrivning",
+                "name": "varmratt6_desc",
+                "type": "textarea",
+                "instructions": "Beskriv maträtten",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "item_desc",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "maxlength": "",
+                "rows": 3,
+                "new_lines": "br"
+            },
+            {
+                "key": "field_5d37063c452e2",
+                "label": "Varmrätt 7 Namn",
+                "name": "varmratt7_title",
+                "type": "text",
+                "instructions": "Skriv rättens namn",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "item",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5d370655452e3",
+                "label": "Varmrätt 7 Pris",
+                "name": "varmratt7_price",
+                "type": "number",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "item_price",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "kr",
+                "min": "",
+                "max": "",
+                "step": ""
+            },
+            {
+                "key": "field_5d370472aa6a9",
+                "label": "Varmrätt 7 Beskrivning",
+                "name": "varmratt7_desc",
+                "type": "textarea",
+                "instructions": "Beskriv maträtten",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "item_desc",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "maxlength": "",
+                "rows": 3,
+                "new_lines": "br"
+            },
+            {
+                "key": "field_5d3706ac452e4",
+                "label": "Varmrätt 8 Namn",
+                "name": "varmratt8_title",
+                "type": "text",
+                "instructions": "Skriv rättens namn",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "item",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5d3706bf452e5",
+                "label": "Varmrätt 8 Pris",
+                "name": "varmratt8_price",
+                "type": "number",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "item_price",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "kr",
+                "min": "",
+                "max": "",
+                "step": ""
+            },
+            {
+                "key": "field_5d3706d2452e6",
+                "label": "Varmrätt 8 Beskrivning",
+                "name": "varmratt8_desc",
+                "type": "textarea",
+                "instructions": "Beskriv maträtten",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "item_desc",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "maxlength": "",
+                "rows": 3,
+                "new_lines": "br"
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "page",
+                    "operator": "==",
+                    "value": "71"
+                }
+            ],
+            [
+                {
+                    "param": "page_template",
+                    "operator": "==",
+                    "value": "alacarte.php"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": "À la Carte Varmrättsmeny"
+    },
+    {
+        "key": "group_5d31afa668ce2",
+        "title": "Lunchmeny",
+        "fields": [
+            {
+                "key": "field_5d36f67c1c3dd",
+                "label": "Lunchpris",
+                "name": "lunch_price",
+                "type": "number",
+                "instructions": "Lunchens kostnad per person",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "min": "",
+                "max": "",
+                "step": ""
+            },
+            {
+                "key": "field_5d31b4041d973",
+                "label": "Lunch 1: Namn",
+                "name": "lunch1_title",
+                "type": "text",
+                "instructions": "Skriv in maträttens namn (max 30 tecken)",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "item",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": 30
+            },
+            {
+                "key": "field_5d31b4a61d974",
+                "label": "Lunch 1: Beskrivning",
+                "name": "lunch1_description",
+                "type": "textarea",
+                "instructions": "Beskriv kort maträtten och dess innehållv (max 150 tecken)",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "item_desc",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "maxlength": 150,
+                "rows": 3,
+                "new_lines": "br"
+            },
+            {
+                "key": "field_5d36f581caec5",
+                "label": "Lunch 2: Namn",
+                "name": "lunch2_title",
+                "type": "text",
+                "instructions": "Skriv in maträttens namn (max 30 tecken)",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "item",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": 30
+            },
+            {
+                "key": "field_5d36f587caec6",
+                "label": "Lunch 2: Beskrivning",
+                "name": "lunch2_description",
+                "type": "textarea",
+                "instructions": "Beskriv kort maträtten och dess innehållv (max 150 tecken)",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "item_desc",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "maxlength": 150,
+                "rows": 3,
+                "new_lines": "br"
+            },
+            {
+                "key": "field_5d36f5dccaec8",
+                "label": "Lunch 3: Namn",
+                "name": "lunch3_title",
+                "type": "text",
+                "instructions": "Skriv in maträttens namn (max 30 tecken)",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "item",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": 30
+            },
+            {
+                "key": "field_5d36f5dacaec7",
+                "label": "Lunch 3: Beskrivning",
+                "name": "lunch3_description",
+                "type": "textarea",
+                "instructions": "Beskriv kort maträtten och dess innehållv (max 150 tecken)",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "item_desc",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "maxlength": 150,
+                "rows": 3,
+                "new_lines": "br"
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "page",
+                    "operator": "==",
+                    "value": "5"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": [
+            "permalink",
+            "the_content",
+            "excerpt",
+            "discussion",
+            "comments",
+            "revisions",
+            "slug",
+            "author",
+            "format",
+            "page_attributes",
+            "featured_image"
+        ],
+        "active": true,
+        "description": "Meny för dagens lunch (fredagslunchen)"
+    }
+]
