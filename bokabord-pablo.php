@@ -1,10 +1,19 @@
 <?php
 /*
-  Template Name: Boka bord
+  Template Name: Boka bord Pablo
 */
-get_header();
+
+if(is_page('bokabord-pablo')) {
+ get_header('pablo');
+}
+else {
+ get_header();
+}
+ wp_head();
+ ?>
+<?php
   echo"<header>"; the_post_thumbnail('hero_image'); echo"</header>";
-  echo"<body class='boka_main'>";
+  echo"<body class='pablo_main'>";
   echo"<div class='boka-section'>";
   echo"<h5>"; the_title(); echo"</h5>";
   echo"</div>";
@@ -44,6 +53,10 @@ get_header();
   }
 
 echo"</body>";
-
-?>
-<?php get_footer(); ?>
+echo"<div class='pablo_footer'>";
+if(is_page('bokabord-pablo')) {
+ get_footer('pablo');
+}
+else {
+ get_footer();
+}
