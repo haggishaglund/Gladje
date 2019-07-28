@@ -731,7 +731,7 @@ footer {flex-shrink: 0;}
 	margin: 0 auto;
 	max-width: 1700px;
 	min-height: 300px;
-	padding: 80px;
+	/*padding: 80px;*/
 }
 
 
@@ -778,7 +778,7 @@ footer {flex-shrink: 0;}
 /*----Boka bord----*/
 
 .boka_main{
-	padding:80px;
+	/*padding:80px;*/
 }
 
 
