@@ -1,4 +1,6 @@
-<?php wp_footer();?>
+<?php wp_footer();
+dynamic_sidebar( 'footer-information-pablo' );
+?>
 
 <div id="footer_space"></div>
 

@@ -3,14 +3,9 @@
   Template Name: pablo
 */
 
-if(is_page('pablo')) {
- get_header('pablo');
-}
-else {
- get_header();
-}
- wp_head();
- ?>
+get_header();
+
+?>
 
  <?php
  echo"<header>";

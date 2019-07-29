@@ -1,8 +1,10 @@
-<?php wp_footer();?>
+<?php wp_footer();
+	dynamic_sidebar( 'footer-information' );
+?>
 
 <div id="footer_space"></div>
 
-<footer>
+<!-- <footer>
 
 	<div class="footer_section">
 		<h6>Kontakt</h6>
@@ -46,7 +48,7 @@
 
 	</div>
 
-</footer>
+</footer> -->
 
 </body>
 </html>

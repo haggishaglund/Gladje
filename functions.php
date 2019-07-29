@@ -188,6 +188,26 @@ add_action( 'init', 'codex_custom_init' );
 
 /////end of taxonomies/////
 
+register_sidebar( array(
+    'name' => __( 'Footer information', 'Gladje' ),
+    'id' => 'footer-information',
+    'description' => __( 'Information for the footer', 'Gladje' ),
+    'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+    'after_widget' => '</aside>',
+    'before_title' => '<h3 class="widget-title">',
+    'after_title' => '</h3>',
+) );
+
+register_sidebar( array(
+    'name' => __( 'Footer information pablo', 'Gladje' ),
+    'id' => 'footer-information-pablo',
+    'description' => __( 'Information for the pablo footer', 'Gladje' ),
+    'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+    'after_widget' => '</aside>',
+    'before_title' => '<h3 class="widget-title">',
+    'after_title' => '</h3>',
+) );
+
 function register_my_menus() {
 		 register_nav_menus(
 			array(
