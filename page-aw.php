@@ -1,4 +1,8 @@
-<?php get_header();?>
+<?php get_header();
+/*
+  Template Name: AW
+*/
+?>
 
 <header>
 	<?php the_post_thumbnail('hero_image'); ?>
