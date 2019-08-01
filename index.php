@@ -26,7 +26,7 @@ if( have_posts() ){
     $args = array(
     'post_type' => 'Pablo',
     'post_status' => 'publish',
-    'posts_per_page' => 6,
+    'posts_per_page' => 2,
   );
 
   $query = new wp_query($args);

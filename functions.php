@@ -2,8 +2,7 @@
 
 //I think I need this for pablo, but i'm not sure yet....
 
-
-function create_pablo_type() {
+function create_post_type() {
   register_post_type('Pablo',
     array(
       'labels' => array(
@@ -18,7 +17,7 @@ function create_pablo_type() {
 }
 
 //add_action('init', 'pablo_post_type');
-  function pablo_post_type() {
+  function create_post_type() {
     $args = array(
           'public' => true,
           'menu_icon' => 'dashicons-portfolio',
@@ -45,7 +44,7 @@ function create_pablo_type() {
   );
     register_post_type('pablo',$args);
 }
-add_action('init','pablo_post_type');
+add_action('init','create_post_type');
 
 
 /////end of taxonomies/////
