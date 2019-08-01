@@ -3,7 +3,7 @@
 <header>
 	<?php the_post_thumbnail('hero_image'); ?>
 	<div id="header_container">
-		<a href="/a-la-carte"><div class="header_link">Meny</div></a>
+		<a href="http://www.restauranggladje.se/jonkoping/a-la-carte"><div class="header_link">Meny</div></a>
 		<a href="/boka-bord"><div class="header_link">Boka</div></a>
 	</div>
 </header>

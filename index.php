@@ -4,6 +4,7 @@
   Template Name: pablo
 */
 
+
 get_header();
 
 ?>
@@ -31,8 +32,8 @@ if( have_posts() ){
   $query = new wp_query($args);
   if ($query->have_posts() ){
 
-  while ($query->have_posts()){
-  $query->the_post();
+    while ($query->have_posts()){
+    $query->the_post();
   ?>
 <center>
   <div class='pablo_section'>

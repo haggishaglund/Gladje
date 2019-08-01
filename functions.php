@@ -1,107 +1,9 @@
 <?php
-//LEAVE THIS CODE, IN CASE OF FUCKUP
-//We might not need it thanks to ACF
-
-/*function create_post_type() {
-  register_post_type( 'À La Carte',
-    array(
-      'labels' => array(
-        'name' => __( 'À La Carte' ),
-        'singular_name' => __( 'Måltid' )
-      ),
-      'public' => true,
-      'has_archive' => true,
-      'rewrite' => array('slug' => 'alacarte'),
-    )
-  );
-}
-
-add_action( 'init', 'create_post_type' );
-
-function alacarte_post_type() {
-	$args = array(
-		'public' => true,
-		'menu_icon' => 'dashicons-text-page',
-		'hierarchical' => false,
-		'supports' => array('title','thumbnail'),
-		'has_archive' => true,
-
-		'taxonomies' => array('veganskt','vegetariskt','fisk','nöt','kyckling','skaldjur','fläsk'),
-		'labels' => array(
-			'name'               => __( 'Maträtter',                    	'alacarte-textdomain' ),
-			'singular_name'      => __( 'Maträtt',                        	'alacarte-textdomain' ),
-			'menu_name'          => __( 'Maträtter',                        	'alacarte-textdomain' ),
-			'name_admin_bar'     => __( 'Lägg till ny maträtt',       	'alacarte-textdomain' ),
-			'add_new'            => __( 'Lägg till',                  	'alacarte-textdomain' ),
-			'add_new_item'       => __( 'Lägg till ny maträtt',       	'alacarte-textdomain' ),
-			'edit_item'          => __( 'Ändra maträtt',              	'alacarte-textdomain' ),
-			'new_item'           => __( 'Ny maträtt',                 	'alacarte-textdomain' ),
-			'view_item'          => __( 'Visa maträtt',               	'alacarte-textdomain' ),
-			'search_items'       => __( 'Sök maträtt',                	'alacarte-textdomain' ),
-			'not_found'          => __( 'Ingen maträtt hittad',       	'alacarte-textdomain' ),
-			'not_found_in_trash' => __( 'Ingen maträtt i papperskorgen','alacarte-textdomain' ),
-			'all_items'          => __( 'Visa ALLA maträtter',        	'alacarte-textdomain' ),
-	),
-);
-	register_post_type('alacarte',$args);
-}
-
-add_action( 'init', 'alacarte_post_type' );
-
-function mat_post_type(){
-	$args = array(
-			'public' => true,
-			'menu_icon' => 'dashicons-text-page',
-			'hierarchical' => false,
-			'supports' => array('title','thumbnail'),
-			'has_archive' => true,
-
-			//Not sure if this is how you do it
-			'taxonomies' => array('allt','veganskt','vegetariskt','fisk','nötkött','kyckling','fläsk','efterrätt','lunch','ala-carte'),
-
-			'labels' => array(
-			'name'               => __( 'Mat',                        'mat-textdomain' ),
-			'singular_name'      => __( 'Mat',                        'mat-textdomain' ),
-			'menu_name'          => __( 'Mat',                        'mat-textdomain' ),
-			'name_admin_bar'     => __( 'Lägg till ny maträtt',       'mat-textdomain' ),
-			'add_new'            => __( 'Lägg till',                  'mat-textdomain' ),
-			'add_new_item'       => __( 'Lägg till ny maträtt',       'mat-textdomain' ),
-			'edit_item'          => __( 'Ändra maträtt',              'mat-textdomain' ),
-			'new_item'           => __( 'Ny maträtt',                 'mat-textdomain' ),
-			'view_item'          => __( 'Visa maträtt',               'mat-textdomain' ),
-			'search_items'       => __( 'Sök maträtt',                'mat-textdomain' ),
-			'not_found'          => __( 'Ingen maträtt hittad',       'mat-textdomain' ),
-			'not_found_in_trash' => __( 'Ingen maträtt i papperskorgen','mat-textdomain' ),
-			'all_items'          => __( 'Visa ALLA maträtter',        'mat-textdomain' ),
-		),
-
-	);
-	register_post_type('mat',$args);
-}
-
-function create_mattype(){
-	$labels = array(
-		'name' => _x( 'Mattyper', 'Taxonomy General Name', 'mat-tema' ),
-	);
-
-	$args = array(
-		'labels'=> $labels,
-		'hierarchical'=> true,
-		'query_var' => 'mattyper',
-	);
-
-	register_taxonomy( 'mattyper', array('mat'), $args );
-}
-add_action( 'init', 'create_mattype' );
-*/
-
-//END OF FUCKUP PROOF CODE(???)
-
 
 //I think I need this for pablo, but i'm not sure yet....
 
 
-/*function create_pablo_type() {
+function create_pablo_type() {
   register_post_type('Pablo',
     array(
       'labels' => array(
@@ -113,7 +15,7 @@ add_action( 'init', 'create_mattype' );
       'rewrite' => array('slug' => 'Pablo'),
     )
   );
-}*/
+}
 
 //add_action('init', 'pablo_post_type');
   function pablo_post_type() {
@@ -145,46 +47,6 @@ add_action( 'init', 'create_mattype' );
 }
 add_action('init','pablo_post_type');
 
-
-function codex_custom_init() {
-
-	/*register_post_type( 'Lunchmeny',
-    array(
-      'labels' => array(
-        'name' => __( 'Lunchmeny' ),
-        'singular_name' => __( 'Måltid' )
-      ),
-      'public' => true,
-      'has_archive' => true,
-      'rewrite' => array('slug' => 'lunch'),
-    )
-  );*/
-
-	/*register_post_type( 'Matmeny',
-		array(
-			'labels' => array(
-				'name' => __( 'Matmenu' ),
-				'singular_name' => __( 'Mattyper' )
-			),
-			'public' => true,
-			'has_archive' => true,
-			'rewrite' => array('slug' => 'mat'),
-		)
-	);*/
-
- register_post_type('Pablo',
- 	array(
- 		'labels' => array(
- 		'name' => __('Pablo'),
- 		'singular_name' => __('Pablo')
- 			),
- 		'public' => true,
- 		'has_archive' => true,
- 		'rewrite' => array('slug' => 'Pablo'),
- 	)
- );
-}
-add_action( 'init', 'codex_custom_init' );
 
 /////end of taxonomies/////
 

@@ -2,12 +2,16 @@
 /*
   Template Name: Boka bord
 */
+
 get_header();
+// header ("Content-type: text/xml");
   echo"<header>"; the_post_thumbnail('hero_image'); echo"</header>";
   echo"<body class='boka_main'>";
   echo"<div class='boka-section'>";
   echo"<h5>"; the_title(); echo"</h5>";
-  echo"</div>";
+
+  the_content();
+  add_shortcode();
 
 
   foreach ($_POST as $query)
@@ -42,6 +46,7 @@ get_header();
     }
     echo $result;
   }
+  echo"</div>";
 
 echo"</body>";
 
