@@ -3,11 +3,11 @@
   Template Name: Pablo
 */
 
-get_header();
-
 ?>
 
  <?php
+ get_header();
+ 
  echo"<header>";
  the_post_thumbnail('hero_image');
       echo" <div class='pablo_hero_container'>";
@@ -22,7 +22,7 @@ if( have_posts() ){
 
    echo"<body class='pablo_main'>";
     $args = array(
-    'post_type' => 'Pablo',
+    'post_type' => 'pablo',
     'post_status' => 'publish',
     'posts_per_page' => 6,
   );
@@ -53,18 +53,6 @@ if( have_posts() ){
   wp_reset_postdata();
   echo"</body>";
 
-
-  //footer
-  echo"<div class='pablo_footer'>";
-  if(is_page('pablo')) {
-   get_footer('pablo');
-  }
-  else {
-   get_footer();
-  }
- echo"</div>";
-
-
   /*<div class="pablo_section">
     <center>
     	<?php/* if(get_field('pablo_title')) {
@@ -81,3 +69,17 @@ if( have_posts() ){
       echo"</div>";
       }
       ?>*/
+
+  //footer
+  echo"<div class='pablo_footer'>";
+  if(is_page('pablo')) {
+   get_footer('pablo');
+  }
+  else {
+   get_footer();
+  }
+  echo"<div class='pablo_footer'>";
+dynamic_sidebar( 'footer-information-pablo' );
+ echo"</div>";
+ echo"</div>";
+?>
