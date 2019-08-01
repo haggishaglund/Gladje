@@ -1,6 +1,6 @@
 <?php
 /*
-  Template Name: pablo
+  Template Name: Pablo
 */
 
 get_header();
