@@ -99,7 +99,4 @@ add_theme_support( 'custom-logo', array(
 
 
 
-get_template_part('acf');
-
-
 ?>
