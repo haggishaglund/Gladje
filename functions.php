@@ -1,28 +1,12 @@
 <?php
 
-//I think I need this for pablo, but i'm not sure yet....
-
-function create_post_type() {
-  register_post_type('Pablo',
-    array(
-      'labels' => array(
-      'name' => __('Pablo'),
-      'singular_name' => __('Pablo')
-      	),
-      'public' => true,
-      'has_archive' => true,
-      'rewrite' => array('slug' => 'Pablo'),
-    )
-  );
-}
-
 //add_action('init', 'pablo_post_type');
-  function create_post_type() {
+  function pablo_post_type() {
     $args = array(
           'public' => true,
           'menu_icon' => 'dashicons-portfolio',
           'hierarchical' => false,
-          'supports' => array('title', 'author', 'thumbnail'),
+          'supports' => array('title', 'editor', 'author', 'thumbnail'),
           'has_archive' => true,
 
             'taxonomies' => array(),
@@ -40,11 +24,11 @@ function create_post_type() {
             'not_found'          => __( 'Inget inlägg hittat',     'pablo-textdomain' ),
             'not_found_in_trash' => __( 'Papperskorgen är tom', 		'pablo-textdomain' ),
             'all_items'          => __( 'Alla inlägg',             'pablo-textdomain' ),
-        )
+        ),
   );
     register_post_type('pablo',$args);
 }
-add_action('init','create_post_type');
+add_action('init','pablo_post_type');
 
 
 /////end of taxonomies/////

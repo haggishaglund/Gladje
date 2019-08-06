@@ -1,4 +1,3 @@
-
 <?php
 /*
   Template Name: pablo
@@ -26,7 +25,7 @@ if( have_posts() ){
     $args = array(
     'post_type' => 'Pablo',
     'post_status' => 'publish',
-    'posts_per_page' => 2,
+    'posts_per_page' => 6,
   );
 
   $query = new wp_query($args);
@@ -76,5 +75,5 @@ dynamic_sidebar( 'footer-information-pablo' );
       }
       echo"</center>";
       echo"</div>";
-      }
-      ?>*/
+    }*/
+      ?>
