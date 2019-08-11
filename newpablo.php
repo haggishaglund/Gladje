@@ -33,7 +33,7 @@ echo"</header>";
     }
     echo"</center>";
     echo"</div>";
-  }
+  
 
   //footer
   echo"<div class='pablo_footer'>";
