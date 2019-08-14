@@ -135,12 +135,11 @@ a {
 header {
 	height: calc(75vh - 60px);
 	width: 100%;
-	border-bottom: 10px solid #FFF;
-
 }
 
 header img {
-	height: 100%;
+	border-bottom: 10px solid #FFF;
+	height: inherit;
 	object-fit: cover; /* crops either the height or width, so that the image won't look stretched but still fit in its container */
 	width: 100%;
 }
