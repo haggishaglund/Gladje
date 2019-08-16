@@ -11,7 +11,7 @@ get_header();
   echo"<h5>"; the_title(); echo"</h5>";
 
   the_content();
-  add_shortcode();
+
 
 
   foreach ($_POST as $query)
