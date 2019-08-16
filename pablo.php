@@ -12,7 +12,7 @@ get_header();
  echo"<header>";
  the_post_thumbnail('hero_image');
       echo" <div class='pablo_hero_container'>";
-         echo"<a href='/boka-bord'> <div class='pablo_hero_link'> BOKA BORD </div> </a>";
+         echo"<a href='http://www.restauranggladje.se/boka-bord/'> <div class='pablo_hero_link'> BOKA BORD </div> </a>";
       echo"</div>";
 echo"</header>";
 
